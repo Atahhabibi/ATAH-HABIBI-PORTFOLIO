@@ -3,13 +3,18 @@ import atah_2 from "../images/atah-img.jpg";
 import { tabs } from "../utils/tabs";
 import atahLogo from "../images/atahhabibiLogo.png";
 import { AiFillCloseCircle } from "react-icons/ai";
+import React from "react";
+import { useState } from "react";
 
 const Sidebar = () => {
+
+  const [closeSidebar, setCloseSidebar] = useState(true);
+
   return (
     <Wrapper>
       <div className="sidebar-header">
         <img src={atahLogo} alt="" className="img sidebar-logo" />
-        <button className="close-btn">
+        <button className="close-btn" onClick={()=>setCloseSidebar(false)}>
           <AiFillCloseCircle />
         </button>
       </div>

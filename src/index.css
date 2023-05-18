@@ -16,7 +16,6 @@ Global css
 
 html {font-size: 100%;
     scroll-behavior: smooth;
-    font-family: r;
 } /*16px*/
 
 :root{
@@ -233,6 +232,50 @@ ul{
 }
 
 
+.resume-btn {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+  position: relative;
+  margin-top:3rem;
+  display: block;
+  text-align: center;
+  font-size:1.8rem;
+  letter-spacing:1px;
+}
+
+.resume-btn svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.resume-btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.resume-btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.resume-btn span {
+  color: white;
+  font-size:1.1rem;
+  font-weight: 400;
+}
+
+
+
 
 
 
@@ -271,7 +314,7 @@ ul{
 @media screen and (min-width:990px){
 
     .section-center{
-        width:95vw;
+        width:90vw;
     }
   
 }
@@ -283,6 +326,10 @@ ul{
 }
 
 
+
+.close-sidebar{
+  transform: translateY(0);
+}
 
 
 
