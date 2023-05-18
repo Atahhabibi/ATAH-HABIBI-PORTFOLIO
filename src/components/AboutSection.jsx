@@ -86,13 +86,25 @@ const Wrapper = styled.div`
     }
   }
 
-  @media screen and (min-width: 900px) {
+
+  @media screen and (min-width:700px) {
+
+    .info-container{
+      margin-top:-1rem;
+    }
+      
+  }
+  
+
+  @media screen and (min-width: 1100px) {
     .info-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
       align-items:center;
       margin-top: -2rem;
+
+      
 
       .text {
         h1 {
