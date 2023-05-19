@@ -4,6 +4,7 @@ import MainTitle from "./MainTitle";
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Skills from "./Skills";
+import WorksSection from "./WorksSection";
 
 
 export {
@@ -13,5 +14,6 @@ export {
  AboutSection,
  MainTitle,
  Skills,
+ WorksSection
  
 }

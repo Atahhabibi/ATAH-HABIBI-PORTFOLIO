@@ -15,7 +15,7 @@ const AboutSection = () => {
           </div>
 
           <div className="text">
-            <h1>Hi I' am Atah ur Rahman Habibi</h1>
+            <h1>Atah ur Rahman Habibi</h1>
             <p>
               I'm Atah Ur Rahman Habibi born in Afganistan and grow up in India
               , I have completed three years of my associate degree in computer
@@ -56,6 +56,11 @@ const Wrapper = styled.div`
     height: 100%;
     margin: 0 auto;
     border-radius: 1rem;
+    display: none;
+  }
+
+  .img-container{
+    display: none;
   }
 
  .about-btn{
@@ -76,7 +81,7 @@ const Wrapper = styled.div`
     h1 {
       margin: 1rem 0;
       text-align: center;
-      font-size:1.7rem;
+      font-size:2.3rem;
       letter-spacing:1px;
       font-weight: 600;
     }
@@ -91,7 +96,15 @@ const Wrapper = styled.div`
 
     .info-container{
       margin-top:-1rem;
+
+      .about-img{
+        display: block;
+      }
     }
+
+   .img-container{
+     display: block;
+   }
       
   }
   

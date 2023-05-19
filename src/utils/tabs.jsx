@@ -10,10 +10,6 @@ export const tabs=[
         name:'ABOUT',
     },
     {
-        id:3,
-        name:'RESUME',
-    },
-    {
         id:4,
         name:'WORKS',
     },

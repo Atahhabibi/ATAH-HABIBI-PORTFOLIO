@@ -1,25 +1,74 @@
 import styled from "styled-components";
 import { MainTitle } from ".";
-import reduxIcon from '../images/html-icon.png'
+import { languages } from "../utils/prommingIcons";
+import reactIcon from "../images/programmingIcons/sass-icon.png";
+import "./Skills.css";
 
 const Skills = () => {
   return (
     <Wrapper id="ABOUT">
       <div className="section-center">
-        <MainTitle mainTitle="my skills" sectionTitle="skills" />
-        <img src={reduxIcon} alt="" />
+        <MainTitle mainTitle="My skills" sectionTitle="skills" />
 
-        
+        <div className="skills-container">
+          {languages.map((item) => {
+            return (
+              <div className="box-outer" key={item.id}>
+                <div className="main_box">
+                  <div className="bar top"></div>
+                  <div className="bar right delay"></div>
+                  <div className="bar bottom delay"></div>
+                  <div className="bar left"></div>
+                  <img src={item.icon} alt="" style={{ width: "5rem" }} />
+                  <h3>{item.name}</h3>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  height: 100vh;
-  padding: 2rem 0;
+  padding: 3rem 0;
   background: #0000004c;
   position: relative;
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    margin-top:2rem;
+    justify-items: center;
+    margin-bottom:2rem;
+  }
+
+  .language-img {
+    width: 5rem;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 600px) {
+    .skills-container {
+      grid-template-columns: 1fr 1fr 1fr ;
+      margin-top:0;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .skills-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-top:0;
+    }
+  }
+
+
+  @media screen and (min-width: 900px) {
+    .skills-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
 `;
 
 export default Skills;

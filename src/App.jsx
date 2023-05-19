@@ -1,4 +1,4 @@
-import { AboutSection, HeroSection, Sidebar, Skills } from "./components"
+import { AboutSection, HeroSection, Sidebar, Skills, WorksSection } from "./components"
 import Navbar from "./components/Navbar"
 import Section from './components/Section'
 
@@ -12,6 +12,8 @@ function App() {
     <AboutSection/>
     <Skills/>
     <Sidebar/>
+    <WorksSection/>
+    <Section/>
   </div>
 }
 

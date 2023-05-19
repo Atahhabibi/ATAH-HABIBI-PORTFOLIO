@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   
   h2{
     color: white;
-    font-weight:600;
+    font-weight:400;
     text-transform: uppercase;
     font-size:2rem;
   }
@@ -106,12 +106,12 @@ const Wrapper = styled.div`
 
   .main-title {
     h2{
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 
   .section-name{
-    font-size:9rem;
+    font-size:8rem;
   
   }
     

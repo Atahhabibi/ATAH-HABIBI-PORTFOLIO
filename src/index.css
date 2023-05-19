@@ -87,7 +87,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color:var(--textColor);
-  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('./images/background2.jpg');
+  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('./images/background3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -231,48 +231,66 @@ ul{
     width: 100%;
 }
 
-
-.resume-btn {
-  width: 200px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #91C9FF;
-  outline: none;
-  transition: 1s ease-in-out;
+.work-btn {
+  --color: #8c3c3c;
+  font-family: inherit;
+  display: inline-block;
+  width:14rem;
+  line-height: 2.5em;
+  margin:10px;
   position: relative;
-  margin-top:3rem;
-  display: block;
-  text-align: center;
-  font-size:1.8rem;
-  letter-spacing:1px;
-}
-
-.resume-btn svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-}
-
-.resume-btn:hover {
-  transition: 1s ease-in-out;
-  background: #4F95DA;
-}
-
-.resume-btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.resume-btn span {
-  color: white;
+  overflow: hidden;
+  border: none;
+  transition: color .5s;
+  z-index: 1;
   font-size:1.1rem;
-  font-weight: 400;
-}
+  border-radius: 6px;
+  font-weight: 500;
+  background:lightblue;
+  color: var(--primary-800);
+  cursor: pointer;
+  color:var(--primary-100);
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  letter-spacing:3px;
+  color: rgb(13, 21, 1);
+
+ }
+ 
+ .work-btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: green;
+  height: 150px;
+  width: 400px;
+  border-radius: 50%;
+ }
+ 
+ .work-btn:hover {
+  color: rgb(10, 1, 1);
+ }
+ 
+ .work-btn::before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .work-btn:hover::before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .work-btn:active:before {
+  background: #0ca343;
+  background: #2b8f12;
+  transition: background 0s;
+ }
+
+
+
+
 
 
 

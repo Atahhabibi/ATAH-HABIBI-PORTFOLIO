@@ -44,7 +44,7 @@ const HeroSection = () => {
 
           <p className="text">
             I am a frontend web developer. I can provide clean code and pixel
-            perfect design. I also make website more & more interactive with web
+            perfect design. I also make website more and more interactive with web
             animations.
           </p>
           <ul className="social">
@@ -188,11 +188,26 @@ const Wrapper = styled.div`
     .text {
       max-width: 35rem !important;
     }
+
+    .social{
+      min-width:30rem;
+      li{
+        width:80px;
+        height:80px;
+        font-size:2rem;
+      }
+    }
   }
 
   @media screen and (min-width: 800px) {
     .text {
       max-width: 50rem !important;
+    }
+
+    .info-container {
+      .text{
+        font-size:1.3rem;
+      }
     }
   }
 `;
