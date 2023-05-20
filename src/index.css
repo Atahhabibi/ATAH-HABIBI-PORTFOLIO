@@ -343,12 +343,17 @@ ul{
     }
 }
 
-
-
-.close-sidebar{
+.hide-nav{
+  transform: translateY(-100%);
+}
+.show-nav{
   transform: translateY(0);
 }
 
-
+.nav-home{
+  background:none !important;
+  border: none !important;
+  backdrop-filter:blur(0) !important;
+}
 
 

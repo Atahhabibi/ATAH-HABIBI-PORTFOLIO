@@ -5,7 +5,7 @@ import { ImGithub } from "react-icons/im";
 const Blog = () => {
   return (
     <Wrapper>
-      <a className="blog-img-container" href="#">
+      <a className="blog-img-container" href="#" target="_blank">
         <h5 className="date">
           April <br /> 30 <br /> 2023
         </h5>
@@ -18,18 +18,10 @@ const Blog = () => {
 
       <div className="info-blog-container">
         <div className="info-title">
-          <h4>What designer can do</h4>
-          <p>Javascript & react</p>
+          <h4>What designer</h4>
+          <p>Javascript and react</p>
         </div>
 
-        <div className="blog-icons">
-          <a href="">
-            <ImGithub />
-          </a>
-          <a href="">
-            <RiLiveLine />
-          </a>
-        </div>
       </div>
     </Wrapper>
   );
@@ -41,8 +33,9 @@ const Wrapper = styled.div`
   border: 1px solid grey;
   border-radius: 5px;
   overflow: hidden;
-  margin-bottom:2rem;
-  margin-right:2rem;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 
   .blog-img {
     margin-bottom: 1rem;
@@ -51,20 +44,22 @@ const Wrapper = styled.div`
     height: 100%;
     background: rgba(226, 218, 218, 0.05);
     cursor: pointer;
-    transition:all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 
-    &:hover {
-      transform: scale(1.3);
+    &:hover{
+     transform: scale(1.3);
     }
   }
 
   .info-title {
-
-    h4{
-        font-size:1.2rem;
+      text-align: center;
+      letter-spacing:3px;
+      margin: 0 auto;
+      h4 {
+        font-size: 1.7rem;
+      }
+      font-size: 1.2rem;
     }
-    font-size:1rem;
-  }
 
   .blog-img-container {
     position: relative;
@@ -89,41 +84,29 @@ const Wrapper = styled.div`
   .info-blog-container {
     display: flex;
     justify-content: space-between;
-    padding:1rem;
+    padding: 1rem;
     align-items: center;
 
-    .blog-icons {
-      display: flex;
-      justify-content: space-between;
-      column-gap: 1rem;
 
-      a {
-        width: 2rem;
-        height:2rem;
-        display: block;
-      }
+  }
 
-      svg {
-        width: 100%;
-        height: 100%;
-        color: #ac5e3a;
-        transition: all 0.3 ease;
-        &:hover {
-          color: lightgreen;
-        }
+  @media screen and (min-width: 720px) {
+    margin-bottom: 2;
+    pointer-events: none;
+
+    .blog-img{
+      transition: none;
+      &:hover{
+        transform: none;
       }
     }
   }
 
-  @media screen and (min-width:720px){
-    margin-bottom:0;
-    
+  @media screen and (min-width: 700px) {
+ 
+
+ 
   }
-
-
-
-
-
 `;
 
 export default Blog;

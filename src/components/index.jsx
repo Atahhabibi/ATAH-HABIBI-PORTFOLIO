@@ -6,7 +6,8 @@ import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Skills from "./Skills";
 import WorksSection from "./WorksSection";
-import AutoPlay from './AutoPlay';
+import ContactSection from "./ContactSection";
+import Footer from "./Footer";
 
 
 export {
@@ -18,6 +19,6 @@ export {
  Skills,
  WorksSection,
  BlogSections,
- AutoPlay
- 
+ ContactSection,
+ Footer
 }

@@ -38,6 +38,7 @@ const Wrapper = styled.div`
   padding: 2rem 0;
   background: #06022c33;
   position: relative;
+ 
 
   .work-btn-container{
     text-align: center;

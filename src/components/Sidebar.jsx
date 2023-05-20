@@ -4,17 +4,16 @@ import { tabs } from "../utils/tabs";
 import atahLogo from "../images/atahhabibiLogo.png";
 import { AiFillCloseCircle } from "react-icons/ai";
 import React from "react";
-import { useState } from "react";
+import { useAppContext } from "../context";
 
 const Sidebar = () => {
-
-  const [closeSidebar, setCloseSidebar] = useState(true);
+  const { isSidebarOpen, closeSidebar } = useAppContext();
 
   return (
-    <Wrapper>
+    <Wrapper style={isSidebarOpen ? { transform: "translateY(0)" } : {transform: "translateY(-100%)"}}>
       <div className="sidebar-header">
         <img src={atahLogo} alt="" className="img sidebar-logo" />
-        <button className="close-btn" onClick={()=>setCloseSidebar(false)}>
+        <button className="close-btn" onClick={closeSidebar}>
           <AiFillCloseCircle />
         </button>
       </div>
@@ -25,12 +24,14 @@ const Sidebar = () => {
         <div className="sidebar-links">
           {tabs.map((tab) => {
             return (
-              <button key={tab.id} className="sidebar-link btn btn-2">
-                <a href={`#${tab.name}`}>
-                  <span className="sideNum">{tab.id}. </span>
-                  {tab.name}
-                </a>
-              </button>
+              <a
+                href={`#${tab.name}`}
+                key={tab.id}
+                className="sidebar-link btn btn-2"
+                onClick={closeSidebar}
+              >
+                {tab.name}
+              </a>
             );
           })}
         </div>
@@ -40,7 +41,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <a className="btn btn-1 hire-btn sidebar-btn">HIRE ME</a>
+      <a className="btn btn-1 hire-btn sidebar-btn" href="mailto:habibiatah@gmail.com">HIRE ME</a>
     </Wrapper>
   );
 };
@@ -55,8 +56,10 @@ const Wrapper = styled.div`
   background: var(--primary-600);
   transform: translateY(100%);
   transition: all 0.5s ease-in-out;
-  /* transform: translateY(0); */
+  
+  
   max-width: 1000px;
+  z-index: 4444;
 
   hr {
     width: 100%;
@@ -152,6 +155,10 @@ const Wrapper = styled.div`
         }
       }
     }
+  }
+
+  @media screen and (min-width: 1000px) {
+    display: none;
   }
 `;
 

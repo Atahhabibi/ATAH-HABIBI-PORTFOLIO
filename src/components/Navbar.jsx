@@ -1,18 +1,55 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { tabs } from "../utils/tabs";
 import atahLogo from "../images/atahhabibiLogo.png";
+import { useAppContext } from "../context";
 
 const Navbar = () => {
+  const { openSidebar } = useAppContext();
+
+  const [scrollTop, setScrollTop] = useState("0");
+  const [classType, setClassType] = useState("show-nav");
+  const [homeNav, sethomeNav] = useState("nav-home");
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollTop((prevTop) => {
+        if (prevTop > window.scrollY) {
+          setClassType("show-nav");
+          sethomeNav("");
+          return window.scrollY;
+        }
+
+        if (prevTop < window.scrollY) {
+          setClassType("hide-nav");
+          sethomeNav("");
+          return window.scrollY;
+        }
+
+        if (prevTop < 100) {
+          sethomeNav("nav-home");
+          return window.scrollY;
+        }
+      });
+    });
+
+    return () => {
+      window.removeEventListener("scroll", () => {
+        setScrollTop(window.scrollY);
+      });
+    };
+  }, []);
+
   return (
-    <Wrapper>
+    <Wrapper className={` ${classType} ${homeNav}`}>
       <div className="main-nav section-center">
         <div className="nav-heading">
           <a href="#home" className="name">
             <img src={atahLogo} alt="" className="img logo-img" />
           </a>
 
-          <button className="toggle-btn btn btn-1">
+          <button className="toggle-btn btn btn-1" onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
@@ -30,7 +67,9 @@ const Navbar = () => {
           })}
         </div>
 
-        <a className="btn btn-1 hire-btn">HIRE ME</a>
+        <a className="btn btn-1 hire-btn" href="mailto:habibiatah@gmail.com">
+          HIRE ME
+        </a>
       </div>
     </Wrapper>
   );
@@ -40,11 +79,15 @@ const Wrapper = styled.div`
   padding: 1.5rem 0;
   background-color: rgba(3, 40, 18, 0.4);
   position: sticky;
+  border-bottom: 0.1px solid grey;
   top: 0;
   z-index: 222;
-  border-bottom:0.1px solid grey;
+  backdrop-filter: blur(15px);
+  transition: transform 0.8s ease;
 
-  backdrop-filter: blur(12px);
+  .hide-nav {
+    transform: translateY(-100%) !;
+  }
 
   .name {
     font-size: 1.5rem;

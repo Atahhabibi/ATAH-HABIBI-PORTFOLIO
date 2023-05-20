@@ -35,6 +35,7 @@ const Wrapper = styled.div`
   padding: 3rem 0;
   background: #0000004c;
   position: relative;
+ 
 
   .skills-container {
     display: grid;

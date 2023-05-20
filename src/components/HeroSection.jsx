@@ -1,9 +1,13 @@
+import { useEffect ,useState} from "react";
+
 import styled from "styled-components";
 import atah_1 from "../images/atah1.jpg";
 import { Typewriter } from "react-simple-typewriter";
-import scrollDownIcon from '../images/mouse-icon.png'
+import scrollDownIcon from "../images/mouse-icon.png";
 
 const HeroSection = () => {
+
+
   return (
     <Wrapper id="HOME">
       <div className="home-center">
@@ -18,7 +22,7 @@ const HeroSection = () => {
               margin: "auto 0",
               fontWeight: "bold",
               color: "white",
-              fontSize: "2rem"
+              fontSize: "2rem",
             }}
             className="title"
           >
@@ -30,7 +34,7 @@ const HeroSection = () => {
                 words={[
                   "Atah ur Rahman",
                   "Front-End Developer",
-                  "Web designer"
+                  "Web designer",
                 ]}
                 loop={Infinity}
                 cursor
@@ -44,33 +48,54 @@ const HeroSection = () => {
 
           <p className="text">
             I am a frontend web developer. I can provide clean code and pixel
-            perfect design. I also make website more and more interactive with web
-            animations.
+            perfect design. I also make website more and more interactive with
+            web animations.
           </p>
           <ul className="social">
-            <li className="btn btn-1">
+            <a
+              className="btn btn-1"
+              href="https://www.facebook.com/atah.rahman.12/"
+              target="_blank"
+            >
               <i className="fa fa-facebook"></i>
-            </li>
-            <li className="btn btn-1">
+            </a>
+            <a
+              className="btn btn-1"
+              href="https://www.instagram.com/official_atah/"
+              target="_blank"
+            >
               <i className="fa fa-instagram"></i>
-            </li>
-            <li className="btn btn-1">
+            </a>
+            <a
+              className="btn btn-1"
+              href="https://github.com/Atahhabibi"
+              target="_blank"
+            >
               <i className="fa fa-github"></i>
-            </li>
-            <li className="btn btn-1">
-              <i className="fa fa-twitter"></i>
-            </li>
-            <li className="btn btn-1">
+            </a>
+            <a
+              className="btn btn-1"
+              href="https://www.linkedin.com/in/atah-ur-rahman-2bb841242/"
+              target="_blank"
+            >
               <i className="fa fa-linkedin"></i>
-            </li>
+            </a>
+            <a
+              className="btn btn-1"
+              href="https://twitter.com/Atah_Ur_Rahman"
+              target="_blank"
+            >
+              <i className="fa fa-twitter"></i>
+            </a>
           </ul>
 
-        <button className="scroll-btn">
-          <a href="#ABOUT"><img src={scrollDownIcon} alt="" /><br/></a>
-        </button>
-
+          <button className="scroll-btn">
+            <a href="#ABOUT">
+              <img src={scrollDownIcon} alt="" />
+              <br />
+            </a>
+          </button>
         </div>
-
       </div>
     </Wrapper>
   );
@@ -80,6 +105,11 @@ const Wrapper = styled.div`
   min-height: calc(100vh - 80px);
   display: grid;
   place-items: center;
+
+
+
+
+ 
 
   .image-container {
     border-radius: 50%;
@@ -141,12 +171,12 @@ const Wrapper = styled.div`
     margin: 0 auto;
     margin-top: 2rem;
 
-    li {
+    a {
       color: rgba(210, 231, 207, 0.947);
       list-style-type: none;
       display: inline-block;
-      width: 40px;
-      height: 40px;
+      width: 80px;
+      height: 80px;
       line-height: 50px;
       padding: 1%;
       border: 1px solid rgba(201, 191, 191, 0.6);
@@ -162,6 +192,10 @@ const Wrapper = styled.div`
       &:hover {
         color: #0b0601;
         background-color: var(--primary-100);
+      }
+
+      i{
+        font-size:2.3rem;
       }
     }
 
@@ -189,12 +223,12 @@ const Wrapper = styled.div`
       max-width: 35rem !important;
     }
 
-    .social{
-      min-width:30rem;
-      li{
-        width:80px;
-        height:80px;
-        font-size:2rem;
+    .social {
+      min-width: 30rem;
+      li {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
       }
     }
   }
@@ -205,8 +239,8 @@ const Wrapper = styled.div`
     }
 
     .info-container {
-      .text{
-        font-size:1.3rem;
+      .text {
+        font-size: 1.3rem;
       }
     }
   }

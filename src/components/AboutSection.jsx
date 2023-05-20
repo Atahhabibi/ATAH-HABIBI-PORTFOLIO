@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { MainTitle } from ".";
 import about_img from "../images/atah-2.jpg";
 import "./Style.css";
+import resume from "../utils/AtahResume.pdf";
+
 
 const AboutSection = () => {
   return (
@@ -31,7 +33,7 @@ const AboutSection = () => {
               get to know new places and cultures.
             </p>
 
-            <a href="#" className="btn btn-2 about-btn">Download Resume</a>
+            <a href={resume} className="btn btn-2 about-btn" download>Download Resume</a>
 
         
           </div>
@@ -48,6 +50,7 @@ const Wrapper = styled.div`
   display: grid;
   place-items: center;
   min-height: 100vh;
+
 
   .info-container {
     margin: 2rem 0;
