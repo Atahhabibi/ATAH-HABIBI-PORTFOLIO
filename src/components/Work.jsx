@@ -30,9 +30,8 @@ const Work = () => {
 };
 
 const Wrapper = styled.div`
-
   .work-container {
-    min-width:300px;
+    min-width: 300px;
     border: 1px solid grey;
     padding: 1.25rem;
     background: rgba(226, 218, 218, 0.05);
@@ -57,33 +56,35 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      column-gap:1rem;
-      backdrop-filter:blur(4px);
-      
-  
-      a {
-        width:2rem;
-        height:2rem;
-        display: block;
-        background:green;
-        padding:0.8rem;
-        border-radius:50%;
-        transition: all 0.3s ease-in;
+      column-gap: 1rem;
+      backdrop-filter: blur(4px);
 
-        &:hover{
-            background-color:#8c3c3c;
+      a {
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        background: green;
+        padding: 0.8rem;
+        border-radius: 50%;
+        transition: all 0.3s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #8c3c3c;
         }
 
         svg {
-          width: 100%;
-          height: 100%;
+          width: 2rem;
+          height:2rem;
           color: white;
         }
       }
     }
 
     &:hover {
-        position: relative;
+      position: relative;
       span {
         transform: translate(0);
       }
@@ -94,23 +95,20 @@ const Wrapper = styled.div`
     margin-bottom: 1rem;
   }
 
+  @media screen and (min-width: 600px) {
+    .work-container {
+      margin-bottom: 0;
+    }
 
- @media screen and (min-width:600px) {
-     .work-container{
-         margin-bottom:0;
-     }
-     
-     .single-img-container{
-         span{
-
-            a{
-                width:4rem;
-                height:4rem;
-            }
-         }
-     }
- }
- 
+    .single-img-container {
+      /* span {
+        a {
+          width: 4rem;
+          height: 4rem;
+        }
+      } */
+    }
+  }
 `;
 
 export default Work;

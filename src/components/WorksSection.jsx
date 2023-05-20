@@ -46,6 +46,7 @@ const Wrapper = styled.div`
       border:3px solid #000000bd;
       background:#8c3c3c;
       color: white;
+      font-size:0.8rem;
     }
   }
 
@@ -61,11 +62,23 @@ const Wrapper = styled.div`
     margin-top:2rem;
     margin-bottom:2rem;
     font-weight: normal;
+    font-size:0.8rem;
     /* background:var(--primary-100); */
   }
 
 
   @media screen and (min-width:700px) {
+    min-height:100vh;
+
+    .work-btn-container{
+      .work-btn{
+        font-size:1rem;
+      }
+    }
+
+    .load-btn{
+      font-size:1rem;
+    }
 
     .works-container{
       grid-template-columns: 1fr 1fr;

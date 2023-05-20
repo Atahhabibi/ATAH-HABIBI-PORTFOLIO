@@ -1,4 +1,5 @@
 import { AboutSection, HeroSection, Sidebar, Skills, WorksSection } from "./components"
+import BlogsSection from "./components/BLogsSection"
 import Navbar from "./components/Navbar"
 import Section from './components/Section'
 
@@ -13,7 +14,9 @@ function App() {
     <Skills/>
     <Sidebar/>
     <WorksSection/>
+    <BlogsSection/>
     <Section/>
+    
   </div>
 }
 

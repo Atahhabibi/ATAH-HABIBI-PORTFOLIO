@@ -15,7 +15,7 @@ const AboutSection = () => {
           </div>
 
           <div className="text">
-            <h1>Atah ur Rahman Habibi</h1>
+            <h1>Atah Habibi</h1>
             <p>
               I'm Atah Ur Rahman Habibi born in Afganistan and grow up in India
               , I have completed three years of my associate degree in computer
@@ -45,10 +45,14 @@ const Wrapper = styled.div`
   background: rgba(1, 14, 2, 0.4);
   position: relative;
   overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 
-  .info-container{
-      margin:2rem 0;
-      padding:0.5rem;
+  .info-container {
+    margin: 2rem 0;
+    padding: 0.5rem;
+    margin-top: 0;
   }
 
   .about-img {
@@ -59,71 +63,70 @@ const Wrapper = styled.div`
     display: none;
   }
 
-  .img-container{
+  .img-container {
     display: none;
   }
 
- .about-btn{
-     color:white;
-     border:1px solid grey;
-     margin-top:1rem;
-     &:hover{
-         color:white;
-         background:green;
-         letter-spacing:1px;
-     }
- }
+  .about-btn {
+    color: white;
+    border: 1px solid grey;
+    margin-top: 1rem;
+    &:hover {
+      color: white;
+      background: green;
+      letter-spacing: 1px;
+    }
+  }
 
   .text {
     text-align: justify;
-    padding:0 0.3rem ;
+    padding: 0 0.3rem;
 
     h1 {
       margin: 1rem 0;
       text-align: center;
-      font-size:2.3rem;
-      letter-spacing:1px;
+      font-size: 2rem;
+      letter-spacing: 1px;
       font-weight: 600;
     }
     p {
       color: white;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
     }
   }
 
+  @media screen and (min-width: 700px) {
+    .info-container {
+      margin-top: -1rem;
 
-  @media screen and (min-width:700px) {
+      .text {
+        p {
+          font-size: 1.3rem;
+        }
+      }
 
-    .info-container{
-      margin-top:-1rem;
-
-      .about-img{
+      .about-img {
         display: block;
       }
     }
 
-   .img-container{
-     display: block;
-   }
-      
+    .img-container {
+      display: block;
+    }
   }
-  
 
   @media screen and (min-width: 1100px) {
     .info-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      align-items:center;
+      align-items: center;
       margin-top: -2rem;
-
-      
 
       .text {
         h1 {
           font-size: 2rem;
-          
-          
         }
         p {
           font-size: 1.3rem;

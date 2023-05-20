@@ -15,7 +15,7 @@ export const tabs=[
     },
     {
         id:5,
-        name:'BLOG',
+        name:'BLOGS',
     },
     {
         id:6,

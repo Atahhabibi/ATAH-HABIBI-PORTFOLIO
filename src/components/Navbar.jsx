@@ -38,10 +38,11 @@ const Navbar = () => {
 
 const Wrapper = styled.div`
   padding: 1.5rem 0;
-  background-color: rgba(52, 170, 101, 0.3);
+  background-color: rgba(3, 40, 18, 0.4);
   position: sticky;
   top: 0;
   z-index: 222;
+  border-bottom:0.1px solid grey;
 
   backdrop-filter: blur(12px);
 

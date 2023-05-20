@@ -3,21 +3,20 @@
   --timing: 1s;
 }
 
-
 .box-outer {
   overflow: hidden;
   /* margin:0 auto; */
-  width: 10rem;
-  height:10rem;
+  width: 5rem;
+  height: 5rem;
   text-align: center;
 }
 .main_box {
-  width: 10rem;
-  height:10rem;
+  width: 5rem;
+  height: 5rem;
   position: relative;
   background: transparent;
   border: 0.5rem solid rgb(32, 180, 18);
-  padding:0.4rem;
+  padding: 0.4rem;
 }
 .bar {
   position: absolute;
@@ -54,45 +53,73 @@
   left: -2.8rem;
   transform: rotate(90deg);
 }
-@-webkit-keyframes h-move {
-  0% {
-    left: -0.5rem;
-  }
-  100% {
-    left: 20rem;
-  }
-}
-@keyframes h-move {
-  0% {
-    left: -0.5rem;
-  }
-  100% {
-    left: 20rem;
-  }
-}
+
 .top,
 .bottom {
   -webkit-animation-name: h-move;
   animation-name: h-move;
 }
-@-webkit-keyframes v-move {
-  0% {
-    top: -0.5rem;
-  }
-  100% {
-    top: 22.8rem;
-  }
-}
-@keyframes v-move {
-  0% {
-    top: -0.5rem;
-  }
-  100% {
-    top: 22.8rem;
-  }
-}
+
 .right,
 .left {
   -webkit-animation-name: v-move;
   animation-name: v-move;
+}
+
+@media screen and (min-width: 600px) {
+  .main_box {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .box-outer {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .right,
+  .left {
+    -webkit-animation-name: v-move;
+    animation-name: v-move;
+  }
+
+  @-webkit-keyframes v-move {
+    0% {
+      top: -0.5rem;
+    }
+    100% {
+      top: 22.8rem;
+    }
+  }
+  @keyframes v-move {
+    0% {
+      top: -0.5rem;
+    }
+    100% {
+      top: 22.8rem;
+    }
+  }
+
+  @-webkit-keyframes h-move {
+    0% {
+      left: -0.5rem;
+    }
+    100% {
+      left: 20rem;
+    }
+  }
+  @keyframes h-move {
+    0% {
+      left: -0.5rem;
+    }
+    100% {
+      left: 20rem;
+    }
+  }
+
+  .top,
+  .bottom {
+    -webkit-animation-name: h-move;
+    animation-name: h-move;
+  }
 }

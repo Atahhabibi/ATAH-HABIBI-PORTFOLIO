@@ -26,11 +26,6 @@ export const languages = [
     name: "github",
   },
   {
-    id: 4,
-    icon: cssIcon,
-    name: "CSS",
-  },
-  {
     id: 5,
     icon: htmlIcon,
     name: "HTML",
@@ -53,7 +48,7 @@ export const languages = [
   {
     id: 9,
     icon: sassIcon,
-    name: "sass",
+    name: "SASS",
   },
   {
     id: 10,
