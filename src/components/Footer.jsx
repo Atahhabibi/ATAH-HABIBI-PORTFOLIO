@@ -62,7 +62,10 @@ const Footer = () => {
             <a href="https://twitter.com/Atah_Ur_Rahman" target="_blank">
               <i className="fa fa-twitter"></i>
             </a>
-            <a href="https://www.linkedin.com/in/atah-ur-rahman-2bb841242/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/atah-ur-rahman-2bb841242/"
+              target="_blank"
+            >
               <i className="fa fa-linkedin"></i>
             </a>
             <a href="https://github.com/Atahhabibi" target="_blank">
@@ -78,6 +81,12 @@ const Footer = () => {
 const Wrapper = styled.div`
   min-height: 6rem;
   border-top: 1px solid #997d7d;
+
+  .footer-icons {
+    a {
+      background: lightgreen;
+    }
+  }
 `;
 
 export default Footer;
