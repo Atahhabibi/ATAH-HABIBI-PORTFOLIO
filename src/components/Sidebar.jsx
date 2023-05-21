@@ -66,15 +66,15 @@ const Wrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background:black;
+  background: black;
   transform: translateY(100%);
   transition: all 0.5s ease-in-out;
 
   max-width: 1000px;
   z-index: 4444;
 
-  .sidebar-container{
-    height:60vh;
+  .sidebar-container {
+    height: 60vh;
     display: grid;
     place-items: center;
   }
@@ -112,6 +112,8 @@ const Wrapper = styled.div`
   .sidebar-btn {
     background: var(--primary-200);
     color: #e3c7c7;
+    letter-spacing: 4px;
+
     &:hover {
       background: #ab621f;
       color: white;
@@ -165,6 +167,17 @@ const Wrapper = styled.div`
     hr {
       margin-bottom: 3rem;
     }
+
+    .sidebar-logo {
+      min-width: 25rem;
+    }
+
+    .sidebar-header {
+      .close-btn {
+        font-size: 3.5rem;
+      }
+    }
+
     .sidebar-links {
       .sidebar-link {
         a {
