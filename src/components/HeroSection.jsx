@@ -107,9 +107,15 @@ const Wrapper = styled.div`
   place-items: center;
 
 
+  .home-center{
+    width:100vw;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+  }
 
-
- 
 
   .image-container {
     border-radius: 50%;
@@ -150,16 +156,20 @@ const Wrapper = styled.div`
     font-weight: 600;
     margin-top: 1rem;
     text-align: center;
-    max-width: 20rem;
+    max-width: 30rem !important;
 
-    h4 {
+    .title {
       font-weight: 600;
+      font-size:2.5rem !important;
+      min-width:25rem !important;
     }
 
+
     .text {
+      margin: 0 auto;
       margin-top: 1rem;
       font-size: 1rem;
-      max-width: 30rem;
+      padding: 0 1rem;
     }
   }
 
@@ -175,8 +185,8 @@ const Wrapper = styled.div`
       color: rgba(210, 231, 207, 0.947);
       list-style-type: none;
       display: inline-block;
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       line-height: 50px;
       padding: 1%;
       border: 1px solid rgba(201, 191, 191, 0.6);
@@ -230,19 +240,65 @@ const Wrapper = styled.div`
         height: 80px;
         font-size: 2rem;
       }
+
+      a{
+        width:70px;
+        height:70px;
+      }
     }
   }
 
   @media screen and (min-width: 800px) {
-    .text {
-      max-width: 50rem !important;
+
+    .home-center{
+      min-width:800px;
+      text-align: center;
+
+      .info-container{
+        margin: 0 auto;
+        min-width:800px;
+
+        .title{
+          font-size:3rem !important;
+  
+        }
+
+        .text{
+          margin: 0 auto;
+          min-width:700px;
+  
+        }
+      }
     }
+    
 
     .info-container {
       .text {
         font-size: 1.3rem;
       }
     }
+  }
+
+  @media screen and (min-width:1000px){
+
+    .home-center{
+      min-width:1100px;
+      text-align: center;
+
+      .info-container{
+        margin: 0 auto;
+        min-width:1100px;
+        .title{
+          font-size:4rem !important;
+
+        }
+        .text{
+          margin: 0 auto;
+          min-width:800px;
+        }
+      }
+    }
+    
   }
 `;
 

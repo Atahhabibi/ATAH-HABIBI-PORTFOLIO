@@ -45,23 +45,31 @@ const Wrapper = styled.div`
   border: 1px solid grey;
   padding: 2rem;
   border-radius: 8px;
-  background: rgba(226, 218, 218, 0.05);
+  background: #000000;
 
   .main-img{
       max-height:30rem;
       max-width:45rem;
+      border:1px solid white;
+
     
   }
 
 
 
   .main-blog-info {
-    padding: 0.8rem;
+    padding: 1rem;
+    padding-top:2rem;
     display: flex;
     justify-content: space-between;
 
     .title {
       letter-spacing: 3px;
+
+      h2{
+        text-transform: uppercase;
+
+      }
 
       h5{
           color: white;
@@ -72,12 +80,12 @@ const Wrapper = styled.div`
 
     a {
       display: block;
-      color: white;
+      color: #9299c2;
       font-size: 1.3rem;
       text-transform: uppercase;
-      color:#0d87ac;
       font-weight: 600;
       transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      display:flex;
 
       &:hover {
         color: white;
@@ -86,7 +94,8 @@ const Wrapper = styled.div`
       span {
         margin-right: 1rem;
         display: inline-block;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+        color: orange;
       }
     }
   }

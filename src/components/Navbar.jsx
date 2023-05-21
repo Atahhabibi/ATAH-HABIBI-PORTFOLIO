@@ -77,7 +77,7 @@ const Navbar = () => {
 
 const Wrapper = styled.div`
   padding: 1.5rem 0;
-  background-color: rgba(3, 40, 18, 0.4);
+  background-color: rgba(3, 40, 18, 0.1);
   position: sticky;
   border-bottom: 0.1px solid grey;
   top: 0;

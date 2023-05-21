@@ -10,7 +10,13 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useAppContext();
 
   return (
-    <Wrapper style={isSidebarOpen ? { transform: "translateY(0)" } : {transform: "translateY(-100%)"}}>
+    <Wrapper
+      style={
+        isSidebarOpen
+          ? { transform: "translateY(0)" }
+          : { transform: "translateY(-100%)" }
+      }
+    >
       <div className="sidebar-header">
         <img src={atahLogo} alt="" className="img sidebar-logo" />
         <button className="close-btn" onClick={closeSidebar}>
@@ -20,28 +26,35 @@ const Sidebar = () => {
 
       <hr />
 
-      <div className="contents">
-        <div className="sidebar-links">
-          {tabs.map((tab) => {
-            return (
-              <a
-                href={`#${tab.name}`}
-                key={tab.id}
-                className="sidebar-link btn btn-2"
-                onClick={closeSidebar}
-              >
-                {tab.name}
-              </a>
-            );
-          })}
+      <div className="sidebar-container">
+        <div className="contents">
+          <div className="sidebar-links">
+            {tabs.map((tab) => {
+              return (
+                <a
+                  href={`#${tab.name}`}
+                  key={tab.id}
+                  className="sidebar-link btn btn-2"
+                  onClick={closeSidebar}
+                >
+                  {tab.name}
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="box-img">
+            <img src={atah_2} alt="" className=" img sidebar-img" />
+          </div>
         </div>
 
-        <div className="box-img">
-          <img src={atah_2} alt="" className=" img sidebar-img" />
-        </div>
+        <a
+          className="btn btn-1 hire-btn sidebar-btn"
+          href="mailto:habibiatah@gmail.com"
+        >
+          HIRE ME
+        </a>
       </div>
-
-      <a className="btn btn-1 hire-btn sidebar-btn" href="mailto:habibiatah@gmail.com">HIRE ME</a>
     </Wrapper>
   );
 };
@@ -53,13 +66,18 @@ const Wrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--primary-600);
+  background:black;
   transform: translateY(100%);
   transition: all 0.5s ease-in-out;
-  
-  
+
   max-width: 1000px;
   z-index: 4444;
+
+  .sidebar-container{
+    height:60vh;
+    display: grid;
+    place-items: center;
+  }
 
   hr {
     width: 100%;

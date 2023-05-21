@@ -6,24 +6,24 @@ const ContactSection = () => {
   return (
     <Wrapper id="CONTACT">
       <div className="section-center">
-        <MainTitle mainTitle="CONTACT Me" sectionTitle="contact" />
+        <MainTitle mainTitle="CONTACT" sectionTitle="contact" />
 
         <div className="contact_us_green">
-          <div className="responsive-container-block big-container">
-            <div className="responsive-container-block container">
+          <div className="responsive-container-block big-container form-contact-container">
+            <div className="responsive-container-block container ">
               <div
-                className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line"
+                className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line  contact-container "
                 id="i69b-2"
               >
                 <form
-                  className="form-box"
+                  className="form-box "
                   action="https://formspree.io/f/xrgvdnoq"
                   method="POST"
                 >
                   <div className="container-block form-wrapper">
                     <div className="head-text-box">
                       <p className="text-blk contactus-head">Contact Me</p>
-                      <p className="text-blk contactus-subhead">
+                      <p className="text-blk contactus-subhead small-screen-text">
                         You are most welcome to contact me , if you have any
                         question, I will really appreciate for your time .
                       </p>
@@ -155,8 +155,6 @@ const ContactSection = () => {
                         />
                       </a>
                     </div>
-
-
                   </div>
                 </div>
               </div>
@@ -173,13 +171,40 @@ const Wrapper = styled.div`
   padding: 2rem 0;
   background: #06022c33;
   position: relative;
+  display: grid;
+  place-items: center;
 
   .head-text-box {
-    text-align: center;
+    text-align: center !important;
   }
 
-  .social-media-links{
+  .small-screen-text {
+    min-width: 310px !important;
+  }
+
+  .social-media-links {
     display: none;
+  }
+
+  @media screen and (min-width: 700px) {
+   
+    
+    .contact-container {
+      padding: 0 !important;
+      padding-bottom: 4rem !important;
+        
+
+      .small-screen-text {
+        min-width: 678px !important;
+        text-align: center !important;
+      }
+
+      form {
+        margin: 0 auto !important;
+        text-align: center !important;
+        padding: 0 1rem;
+      }
+    }
   }
 `;
 

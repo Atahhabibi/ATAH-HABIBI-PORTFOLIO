@@ -28,7 +28,7 @@ const Blog = () => {
 };
 
 const Wrapper = styled.div`
-  background: rgba(226, 218, 218, 0.05);
+  background:black;
   padding: 1rem;
   border: 1px solid grey;
   border-radius: 5px;
@@ -42,7 +42,7 @@ const Wrapper = styled.div`
     min-width: 300px;
     width: 100%;
     height: 100%;
-    background: rgba(226, 218, 218, 0.05);
+    background:black;
     cursor: pointer;
     transition:transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 
