@@ -5,7 +5,8 @@ import {RiLiveLine} from 'react-icons/ri'
 import {ImGithub} from 'react-icons/im'
 
 
-const Work = () => {
+const Work = ({name,liveLink,id, githhubLink,img,program}) => {
+
   return (
     <Wrapper>
       
@@ -13,17 +14,17 @@ const Work = () => {
 
         <div className="single-img-container">
           <span>
-            <a href=""><ImGithub/></a>
-            <a href=""><RiLiveLine/></a>
+            <a href={ githhubLink} target="_blank"><ImGithub/></a>
+            <a href={liveLink} target="_blank"><RiLiveLine/></a>
           </span>
           <img
-            src="https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-19.jpg"
-            alt=""
+            src={img}
+            alt={name}
             className="img work-img"
           />
         </div>
-        <h4 className="work-name">Candle</h4>
-        <p>Creative Candle Light</p>
+        <h4 className="work-name">{name}</h4>
+        <p className="program">{program}</p>
       </div>
     </Wrapper>
   );
@@ -31,17 +32,25 @@ const Work = () => {
 
 const Wrapper = styled.div`
   .work-container {
-    min-width: 300px;
+    width: 380px;
+    height:331px;
     border: 1px solid grey;
     padding: 1.25rem;
     background: rgba(226, 218, 218, 0.05);
     border-radius: 0.5rem;
   }
 
+  .program{
+    text-transform:uppercase;
+  }
+
   .single-img-container {
     position: relative;
     overflow: hidden;
 
+    
+
+  
     span {
       position: absolute;
       top: 0;
@@ -93,6 +102,8 @@ const Wrapper = styled.div`
 
   .work-img {
     margin-bottom: 1rem;
+    width:344px;
+    height:214px ;
   }
 
   @media screen and (min-width: 600px) {

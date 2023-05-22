@@ -1,25 +1,23 @@
 import styled from "styled-components";
-import { RiLiveLine } from "react-icons/ri";
-import { ImGithub } from "react-icons/im";
 
-const Blog = () => {
+const Blog = ({name,liveLink,img,program,date}) => {
   return (
     <Wrapper>
-      <a className="blog-img-container" href="#" target="_blank">
+      <a className="blog-img-container" href={liveLink} target="_blank">
         <h5 className="date">
-          April <br /> 30 <br /> 2023
+          {date}
         </h5>
         <img
-          src="https://atah-habibi-porfolio.netlify.app/images/java-complex/noku.png"
-          alt=""
+          src={img}
+          alt={name}
           className="img blog-img"
         />
       </a>
 
       <div className="info-blog-container">
         <div className="info-title">
-          <h4>What designer</h4>
-          <p>Javascript and react</p>
+          <h4>{name}</h4>
+          <p>{program}</p>
         </div>
 
       </div>
@@ -37,9 +35,14 @@ const Wrapper = styled.div`
   margin-right: 1rem;
   margin-left: 1rem;
 
+  
+
+
+  display: grid;
+  grid-template-rows:1fr auto;
+
   .blog-img {
     margin-bottom: 1rem;
-    min-width: 300px;
     width: 100%;
     height: 100%;
     background:black;
@@ -93,9 +96,13 @@ const Wrapper = styled.div`
   @media screen and (min-width: 720px) {
     margin-bottom: 2;
     pointer-events: none;
+    max-height:300px;
+
 
     .blog-img{
       transition: none;
+      max-height:200px;
+     
       &:hover{
         transform: none;
       }

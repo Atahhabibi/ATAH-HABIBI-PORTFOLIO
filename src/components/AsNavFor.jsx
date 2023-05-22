@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
+import { BLOGS } from "../utils/projects";
 import Blog from "./Blog";
 import MainBlogView from "./MainBlog";
-import Work from './Work'
+import Work from "./Work";
 
 const AsNavFor = () => {
   const [nav1, setNav1] = useState(null);
@@ -18,9 +19,9 @@ const AsNavFor = () => {
   return (
     <div>
       <Slider asNavFor={nav2} ref={slider1Ref}>
-       <MainBlogView/>
-       <MainBlogView/>
-       <MainBlogView/>
+        {BLOGS.map((item, index) => {
+          return <MainBlogView key={index} {...item} />;
+        })}
       </Slider>
 
       <Slider
@@ -32,11 +33,9 @@ const AsNavFor = () => {
         autoplay={true}
         autoplaySpeed={3500}
       >
-      <Blog/>
-      <Blog/>
-      <Blog/>
-      <Blog/>
-      <Blog/>
+        {BLOGS.map((item, index) => {
+          return <Blog key={index} {...item} />;
+        })}
       </Slider>
     </div>
   );

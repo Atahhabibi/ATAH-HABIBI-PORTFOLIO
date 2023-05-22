@@ -3,29 +3,29 @@ import { useState } from "react";
 import { RiLiveLine } from "react-icons/ri";
 import { AiFillGithub } from "react-icons/ai";
 
-const MainBlogView = () => {
+const MainBlogView = ({name,liveLink,id, githhubLink,img,program,date}) => {
   return (
     <Wrapper>
       <img
-        src="https://atah-habibi-porfolio.netlify.app/images/java-complex/atah-screen.png"
-        alt=""
+        src={img}
+        alt={name}
         className="main-img"
       />
 
       <div className="main-blog-info">
         <div className="title">
-          <h2>Cocktail Api</h2>
-          <h5>javascript and react</h5>
+          <h2>{name}</h2>
+          <h5>{program}</h5>
         </div>
 
         <div className="main-icons">
-          <a href="#">
+          <a href={githhubLink} target="_blank">
             <span>
               <AiFillGithub />
             </span>
             source code
           </a>
-          <a href="#">
+          <a href={liveLink} target="_blank">
             <span>
               <RiLiveLine />
             </span>
@@ -50,9 +50,8 @@ const Wrapper = styled.div`
   .main-img{
       max-height:30rem;
       max-width:45rem;
-      border:1px solid white;
+      border:2px solid black;
 
-    
   }
 
 

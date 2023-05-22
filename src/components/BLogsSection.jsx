@@ -4,6 +4,7 @@ import Blog from "./Blog";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AsNavFor from "./AsNavFor";
+import { BLOGS } from "../utils/projects";
 
 const BlogsSection = () => {
   return (
@@ -12,10 +13,9 @@ const BlogsSection = () => {
         <MainTitle mainTitle=" Blogs" sectionTitle="BLOGS" />
 
         <div className="blogs-container">
-          <Blog />
-          <Blog />
-          <Blog />
-          <Blog />
+          {BLOGS.map((item, index) => {
+            return <Blog key={index} {...item} />;
+          })}
         </div>
         <button className="btn btn-2 load-blog-btn ">Load more</button>
 
@@ -46,7 +46,6 @@ const Wrapper = styled.div`
   }
 
   .slick-initialized:nth-child(1) {
-    
     .slick-prev:before,
     .slick-next:before {
       display: none;
@@ -66,10 +65,12 @@ const Wrapper = styled.div`
     display: none;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
+
     .blogs-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+
     }
   }
 
@@ -78,7 +79,7 @@ const Wrapper = styled.div`
       display: block;
     }
 
-    .load-blog-btn{
+    .load-blog-btn {
       display: none;
     }
 

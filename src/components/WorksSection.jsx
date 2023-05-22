@@ -1,8 +1,16 @@
 import styled from "styled-components";
 import { MainTitle } from ".";
+import { projectsData } from "../utils/projects";
 import Work from "./Work";
 
 const WorksSection = () => {
+
+
+  let projects=projectsData.map((item)=>item.projects)
+
+  projects=projects.flat();
+
+
   return (
     <Wrapper id="WORKS">
       <div className="section-center">
@@ -16,14 +24,12 @@ const WorksSection = () => {
         </div>
 
         <div className="works-container">
-          <Work/>
-          <Work/>
-          <Work/>
-          <Work/>
-          <Work/>
-          <Work/>
-          <Work/>
-          <Work/>
+          {
+           projects.map((item,index)=>{
+             return <Work key={index} {...item}/>
+           })
+          }
+       
         </div>
 
         <button className="btn btn-2 load-btn">load more</button>
