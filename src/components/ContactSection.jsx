@@ -1,8 +1,37 @@
 import styled from "styled-components";
 import { MainTitle } from ".";
 import "./Contact.css";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { toast, ToastContainer } from "react-toastify";
+import { useEffect, useState } from "react";
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm("xrgvdnoq");
+  const [text, setText] = useState("Email successfully sent!");
+  const [isSend, setIsSend] = useState(false);
+
+  if (state.succeeded) {
+    toast.success("Email successfully sent!", {
+      position: "top-center",
+      autoClose: 9000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light"
+    });
+  }
+
+  const handleSendRequest = () => {
+    setIsSend(true);
+
+    setTimeout(() => {
+      setIsSend(false);
+    }, 8000);
+  };
+
   return (
     <Wrapper id="CONTACT">
       <div className="section-center">
@@ -15,11 +44,7 @@ const ContactSection = () => {
                 className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line  contact-container "
                 id="i69b-2"
               >
-                <form
-                  className="form-box "
-                  action="https://formspree.io/f/xrgvdnoq"
-                  method="POST"
-                >
+                <form onSubmit={handleSubmit}>
                   <div className="container-block form-wrapper">
                     <div className="head-text-box">
                       <p className="text-blk contactus-head">Contact Me</p>
@@ -38,6 +63,13 @@ const ContactSection = () => {
                           className="input"
                           id="ijowk-6"
                           name="FirstName"
+                          type="text"
+                        />
+
+                        <ValidationError
+                          prefix="First Name"
+                          field="firstName"
+                          errors={state.errors}
                         />
                       </div>
                       <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
@@ -46,15 +78,41 @@ const ContactSection = () => {
                           className="input"
                           id="indfi-4"
                           name="Last Name"
+                          type="text"
+                        />
+                        <ValidationError
+                          prefix="LastName"
+                          field="lastName"
+                          errors={state.errors}
                         />
                       </div>
                       <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p className="text-blk input-title">EMAIL</p>
-                        <input className="input" id="ipmgh-6" name="Email" />
+                        <input
+                          className="input"
+                          id="ipmgh-6"
+                          name="Email"
+                          type="email"
+                        />
+                        <ValidationError
+                          prefix="Email"
+                          field="email"
+                          errors={state.errors}
+                        />
                       </div>
                       <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                         <p className="text-blk input-title">SUBJECT</p>
-                        <input className="input" id="imgis-5" name="SUBJECT" />
+                        <input
+                          className="input"
+                          id="imgis-5"
+                          name="SUBJECT"
+                          type="text"
+                        />
+                        <ValidationError
+                          prefix="Subject"
+                          field="subject"
+                          errors={state.errors}
+                        />
                       </div>
                       <div
                         className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
@@ -67,12 +125,25 @@ const ContactSection = () => {
                           className="textinput"
                           id="i5vyy-6"
                           placeholder="Please enter Message..."
+                          name="Message"
                         ></textarea>
+
+                        <ValidationError
+                          prefix="Body"
+                          field="message"
+                          errors={state.errors}
+                        />
                       </div>
+                      {isSend && <h4 className="email-sent">{text}</h4>}
                     </div>
+
                     <div className="btn-wrapper">
-                      <button className="submit-btn" type="submit">
-                        Submit
+                      <button
+                        className="submit-btn"
+                        type="submit"
+                        onClick={handleSendRequest}
+                      >
+                        Send Mail
                       </button>
                     </div>
                   </div>
@@ -174,6 +245,14 @@ const Wrapper = styled.div`
   display: grid;
   place-items: center;
 
+  .email-sent {
+    margin: 0 auto;
+    width: 80%;
+    background: rgba(117, 227, 162, 0.2);
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
   .head-text-box {
     text-align: center !important;
   }
@@ -187,12 +266,9 @@ const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 700px) {
-   
-    
     .contact-container {
       padding: 0 !important;
       padding-bottom: 4rem !important;
-        
 
       .small-screen-text {
         min-width: 678px !important;

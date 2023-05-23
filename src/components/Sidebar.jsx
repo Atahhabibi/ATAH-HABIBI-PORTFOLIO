@@ -14,7 +14,7 @@ const Sidebar = () => {
       style={
         isSidebarOpen
           ? { transform: "translateY(0)" }
-          : { transform: "translateY(-100%)" }
+          : { transform: "translateY(100%)" }
       }
     >
       <div className="sidebar-header">

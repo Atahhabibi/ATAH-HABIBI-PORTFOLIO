@@ -8,41 +8,32 @@ import { useAppContext } from "../context";
 const Navbar = () => {
   const { openSidebar } = useAppContext();
 
-  const [scrollTop, setScrollTop] = useState("0");
   const [classType, setClassType] = useState("show-nav");
-  const [homeNav, sethomeNav] = useState("nav-home");
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (window.scrollY > 200) {
+      if (window.scrollY > lastScrollY) {
+        setClassType("hide-nav");
+      } else {
+        setClassType("show-nav");
+      }
+    } else {
+      setClassType("nav-home");
+    }
+
+    setLastScrollY(window.scrollY);
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScrollTop((prevTop) => {
-        if (prevTop > window.scrollY) {
-          setClassType("show-nav");
-          sethomeNav("");
-          return window.scrollY;
-        }
-
-        if (prevTop < window.scrollY) {
-          setClassType("hide-nav");
-          sethomeNav("");
-          return window.scrollY;
-        }
-
-        if (prevTop < 100) {
-          sethomeNav("nav-home");
-          return window.scrollY;
-        }
-      });
-    });
-
+     window.addEventListener("scroll", controlNavbar);
     return () => {
-      window.removeEventListener("scroll", () => {
-        setScrollTop(window.scrollY);
-      });
+      window.removeEventListener("scroll", controlNavbar);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
-    <Wrapper className={` ${classType} ${homeNav}`}>
+    <Wrapper className={` ${classType}`}>
       <div className="main-nav section-center">
         <div className="nav-heading">
           <a href="#home" className="name">

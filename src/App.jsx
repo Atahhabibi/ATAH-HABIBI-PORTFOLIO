@@ -9,10 +9,15 @@ import {
 } from "./components";
 import BlogsSection from "./components/BLogsSection";
 import Navbar from "./components/Navbar";
+ import React from "react";
+ import { ToastContainer } from "react-toastify";
+
+
 
 function App() {
   return (
     <div>
+      <ToastContainer/>
       <Navbar />
       <HeroSection />
       <AboutSection />
