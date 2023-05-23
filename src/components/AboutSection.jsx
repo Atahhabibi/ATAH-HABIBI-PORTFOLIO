@@ -22,9 +22,8 @@ const AboutSection = () => {
               I'm Atah Ur Rahman Habibi born in Afganistan and grow up in India
               , I have completed three years of my associate degree in computer
               science at grossmont and cuymaca college and got my associate
-              degree and I am getting transfer to SDSU in coming august 2023.
-              I'm a front-end web developer having great skill at fron-end
-              programs such HTML, CSS , Javascript and React.js , passionate
+              degree .I'm a front-end web developer having great skill at front-end
+              programs such HTML, CSS, SASS, Javascript and React.js , passionate
               about solving problems with Websites and creating different
               solutions. Stay free to know a little more about my life, follow
               me on my networks where I share a little more about myself. I love

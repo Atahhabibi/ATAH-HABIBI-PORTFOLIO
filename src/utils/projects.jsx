@@ -6,8 +6,9 @@ import CocktailImg from "../images/projects/Cocktail.png";
 import SearchImg from "../images/projects/Search.png";
 import StoreImg from "../images/projects/Store.png";
 import yutubeImg from "../images/projects/yutube.png";
-import googleImg from  "../images/projects/google2.png";
+import googleImg from "../images/projects/google2.png";
 import jobsterImg from "../images/projects/jobster.png";
+import portfolioImg from "../images/projects/protfolioWesite.png";
 import furnitureImg from "../images/projects/furniture.png";
 import WatchMovieImg from "../images/projects/watchMovie.png";
 
@@ -21,7 +22,7 @@ export const projectsData = [
         liveLink: "https://watch-favorite-movie.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
         img: WatchMovieImg,
-        program: "React",
+        program: "React"
       },
       {
         id: 2,
@@ -29,15 +30,15 @@ export const projectsData = [
         liveLink: "https://yutube-app-clone.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
         img: yutubeImg,
-        program: "React",
+        program: "React"
       },
       {
         id: 3,
         name: "Google Search Clone",
         liveLink: "https://search-google-app.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/GOOGLE_SEARCH_CLONE",
-        img:googleImg,
-        program: "React",
+        img: googleImg,
+        program: "React"
       },
       {
         id: 4,
@@ -45,7 +46,7 @@ export const projectsData = [
         liveLink: "https://jobster-job.netlify.app/landing",
         githhubLink: "https://github.com/Atahhabibi/JOBSTER",
         img: jobsterImg,
-        program: "React",
+        program: "React"
       },
       {
         id: 5,
@@ -53,21 +54,29 @@ export const projectsData = [
         liveLink: "https://furniture-online-app.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
         img: furnitureImg,
-        program: "React",
-      },
-    ],
+        program: "React"
+      }
+    ]
   },
 
   {
     name: "HTML/CSS",
     projects: [
       {
+        id: 3,
+        name: "Portfolio Website",
+        liveLink: "https://front-end-portfolio-website.netlify.app/",
+        githhubLink: "https://github.com/Atahhabibi/PORTFOLIO-FRONT-END",
+        img: portfolioImg,
+        program: "HTML/CSS"
+      },
+      {
         id: 1,
         name: "BackRoad Tour Company",
         liveLink: "https://company-backroad-tours.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/TOUR-COMPANY-PROJECT",
         img: backroadTourImg,
-        program: "HTML/CSS",
+        program: "HTML/CSS"
       },
       {
         id: 2,
@@ -75,15 +84,7 @@ export const projectsData = [
         liveLink: "https://nokusocial.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/SOCIAL-MEDIA-NOKO-SOCIAL",
         img: NokuSocialImg,
-        program: "HTML/CSS",
-      },
-      {
-        id: 3,
-        name: "Portfolio Website",
-        liveLink: "",
-        githhubLink: "",
-        img:CaraStoreImg,
-        program: "HTML/CSS",
+        program: "HTML/CSS"
       },
       {
         id: 4,
@@ -91,7 +92,7 @@ export const projectsData = [
         liveLink: "https://shopping-with-us.netlify.app/index.html",
         githhubLink: "https://github.com/Atahhabibi/KARA-E-COMMERCE-WEBSITE",
         img: CaraStoreImg,
-        program: "HTML/CSS",
+        program: "HTML/CSS"
       },
       {
         id: 5,
@@ -99,9 +100,9 @@ export const projectsData = [
         liveLink: "https://egator-education.netlify.app/index.html",
         githhubLink: "https://github.com/Atahhabibi/EGATOR-EDUCATION-WEBSITE",
         img: EgadorEducationImg,
-        program: "HTML/CSS",
-      },
-    ],
+        program: "HTML/CSS"
+      }
+    ]
   },
 
   {
@@ -114,7 +115,7 @@ export const projectsData = [
         githhubLink:
           "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/24-Coktails",
         img: CocktailImg,
-        program: "JAVASCRIPT",
+        program: "JAVASCRIPT"
       },
       {
         id: 2,
@@ -123,7 +124,7 @@ export const projectsData = [
         githhubLink:
           "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/28-Wikipedia",
         img: SearchImg,
-        program: "JAVASCRIPT",
+        program: "JAVASCRIPT"
       },
       {
         id: 3,
@@ -132,54 +133,57 @@ export const projectsData = [
         githhubLink:
           "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/29-comfy-store",
         img: StoreImg,
-        program: "JAVASCRIPT",
-      },
-
-      
-    ],
-  },
+        program: "JAVASCRIPT"
+      }
+    ]
+  }
 ];
 
-
-export const BLOGS=[
-
-    {
-        id:1,
-        date:'03 May 2023',
-        name: "Furniture online",
-        liveLink: "https://furniture-online-app.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
-        img: furnitureImg,
-        program: "React",
-      },
-      {
-        id: 2,
-        date:'14 May 2023',
-        name: "Cocktial Drink",
-        liveLink: "https://drink-site-project.netlify.app/index.html",
-        githhubLink:
-          "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/24-Coktails",
-        img: CocktailImg,
-        program: "JAVASCRIPT",
-      },
-      {
-        id: 3,
-        date:'25 April 2023',
-        name: "Yutube Clone",
-        liveLink: "https://yutube-app-clone.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
-        img: yutubeImg,
-        program: "React",
-      },
-      {
-        id: 1,
-        name: "WatchMovie",
-        date:'05 March 2023',
-        liveLink: "https://watch-favorite-movie.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
-        img: WatchMovieImg,
-        program: "React",
-      },
-      
-
-]
+export const BLOGS = [
+  {
+    id: 1,
+    date: "03 May 2023",
+    name: "Furniture online",
+    liveLink: "https://furniture-online-app.netlify.app/",
+    githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
+    img: furnitureImg,
+    program: "React"
+  },
+  {
+    id: 2,
+    date: "14 May 2023",
+    name: "Cocktial Drink",
+    liveLink: "https://drink-site-project.netlify.app/index.html",
+    githhubLink:
+      "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/24-Coktails",
+    img: CocktailImg,
+    program: "JAVASCRIPT"
+  },
+  {
+    id: 3,
+    date: "25 April 2023",
+    name: "Noku Social App",
+    liveLink: "https://nokusocial.netlify.app/",
+    githhubLink: "https://github.com/Atahhabibi/SOCIAL-MEDIA-NOKO-SOCIAL",
+    img: NokuSocialImg,
+    program: "HTML/CSS"
+  },
+  {
+    id: 1,
+    name: "WatchMovie",
+    date: "05 March 2023",
+    liveLink: "https://watch-favorite-movie.netlify.app/",
+    githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
+    img: WatchMovieImg,
+    program: "React"
+  },
+  {
+    id: 4,
+    name: "cara online",
+    date: "25 April 2023",
+    liveLink: "https://shopping-with-us.netlify.app/index.html",
+    githhubLink: "https://github.com/Atahhabibi/KARA-E-COMMERCE-WEBSITE",
+    img: CaraStoreImg,
+    program: "HTML/CSS"
+  }
+];

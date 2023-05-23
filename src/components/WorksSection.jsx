@@ -34,8 +34,15 @@ const WorksSection = () => {
     setProjectsIndex((prev) => {
       let newIndex = prev + 3;
       if (newIndex >= projects.length) {
-        newIndex = projects.length;
         setIsLoad(false);
+        newIndex = projects.length;
+        const worksSecion = document.getElementById("WORKS");
+
+        if (worksSecion) {
+          if (!isLoad) {
+            worksSecion.scrollIntoView({ behavior: "smooth" });
+          }
+        }
       }
       setNewProjects(projects.slice(0, newIndex));
       return newIndex;

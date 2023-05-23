@@ -68,12 +68,12 @@ const Navbar = () => {
 
 const Wrapper = styled.div`
   padding: 1.5rem 0;
-  background-color: rgba(3, 40, 18, 0.1);
+  background-color: rgba(3, 40, 18, 0.9);
   position: sticky;
   border-bottom: 0.1px solid grey;
   top: 0;
   z-index: 222;
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
   transition: transform 0.8s ease;
 
   .hide-nav {
@@ -108,6 +108,11 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media screen and (min-width: 500px) {
+    backdrop-filter: blur(15px);
+    background-color: rgba(3, 40, 18, 0.1);
   }
 
   @media screen and (min-width: 1000px) {
