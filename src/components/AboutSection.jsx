@@ -19,22 +19,24 @@ const AboutSection = () => {
           <div className="text">
             <h1>Atah Habibi</h1>
             <p>
-              I'm Atah Ur Rahman Habibi born in Afganistan and grow up in India
+              I'm Atah Ur Rahman Habibi born in Afghanistan and grow up in India
               , I have completed three years of my associate degree in computer
-              science at grossmont and cuymaca college and got my associate
-              degree .I'm a front-end web developer having great skill at front-end
-              programs such HTML, CSS, SASS, Javascript and React.js , passionate
-              about solving problems with Websites and creating different
-              solutions. Stay free to know a little more about my life, follow
-              me on my networks where I share a little more about myself. I love
-              to make new friends and learn new things. I love being with my
-              family and friends, they are everything to me.I love to travel and
-              get to know new places and cultures.
+              science at Grossmont and Cuyamaca college and got my associate
+              degree and I'm a front-end web developer having great skill at
+              front-end programs such HTML, CSS , JavaScript and React.js ,
+              passionate about solving problems with Websites and creating
+              different solutions. Resourceful Front End Web Developer bringing
+              in-depth knowledge of latest technology trends to produce clean
+              website design. Experience handling complex HTML and CSS coding,
+              design and extensions to meet organization's front-facing internet
+              needs. Detail-oriented collaboration with others to define project
+              expectations and demand. Hands-on testing and debugging.to address
+              inconsistencies and maintain performance thresholds. 
             </p>
 
-            <a href={resume} className="btn btn-2 about-btn" download>Download Resume</a>
-
-        
+            <a href={resume} className="btn btn-2 about-btn" download>
+              Download Resume
+            </a>
           </div>
         </div>
       </div>
