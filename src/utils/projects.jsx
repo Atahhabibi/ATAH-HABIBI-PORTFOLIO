@@ -11,6 +11,9 @@ import jobsterImg from "../images/projects/jobster.png";
 import portfolioImg from "../images/projects/protfolioWesite.png";
 import furnitureImg from "../images/projects/furniture.png";
 import WatchMovieImg from "../images/projects/watchMovie.png";
+import foodBlogImg from "../images/projects/food.png";
+import discussionImg from "../images/projects/dis.png";
+import newsBlog from "../images/projects/newsBlog2.png";
 
 export const projectsData = [
   {
@@ -143,21 +146,21 @@ export const BLOGS = [
   {
     id: 1,
     date: "03 May 2023",
-    name: "Furniture online",
-    liveLink: "https://furniture-online-app.netlify.app/",
-    githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
-    img: furnitureImg,
+    name: "Food Recipe Blog",
+    liveLink: "https://food-blog-recipe.netlify.app/",
+    githhubLink: "https://github.com/Atahhabibi/FOOD-RECIPE-BLOG",
+    img:foodBlogImg,
     program: "React"
   },
   {
     id: 2,
     date: "14 May 2023",
-    name: "Cocktial Drink",
-    liveLink: "https://drink-site-project.netlify.app/index.html",
+    name: "Discussion Blog",
+    liveLink: "https://discussion-blog.netlify.app/",
     githhubLink:
-      "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/24-Coktails",
-    img: CocktailImg,
-    program: "JAVASCRIPT"
+      "https://github.com/Atahhabibi/DISCUSSION-BLOG",
+    img:discussionImg,
+    program: "REACT"
   },
   {
     id: 3,
@@ -170,20 +173,12 @@ export const BLOGS = [
   },
   {
     id: 1,
-    name: "WatchMovie",
+    name: "News Blog",
     date: "05 March 2023",
-    liveLink: "https://watch-favorite-movie.netlify.app/",
-    githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
-    img: WatchMovieImg,
+    liveLink: "https://world-news-blog.netlify.app/",
+    githhubLink: "https://github.com/Atahhabibi/NEWS-BLOG",
+    img:newsBlog,
     program: "React"
   },
-  {
-    id: 4,
-    name: "cara online",
-    date: "25 April 2023",
-    liveLink: "https://shopping-with-us.netlify.app/index.html",
-    githhubLink: "https://github.com/Atahhabibi/KARA-E-COMMERCE-WEBSITE",
-    img: CaraStoreImg,
-    program: "HTML/CSS"
-  }
+
 ];
