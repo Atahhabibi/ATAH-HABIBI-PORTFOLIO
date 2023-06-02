@@ -12,10 +12,13 @@ const WorksSection = () => {
     projects.slice(0, projectsIndex)
   );
   const [isLoad, setIsLoad] = useState(true);
+  const [activeBtn, setActiveBtn] = useState("All");
   const loadRef = useRef(null);
 
   const handleWorks = (e) => {
     const value = e.target.dataset.value;
+
+    setActiveBtn(value);
 
     if (value === "All") {
       loadRef.current.style.display = "block";
@@ -61,16 +64,29 @@ const WorksSection = () => {
         <MainTitle mainTitle="My works" sectionTitle="Works" />
 
         <div className="work-btn-container">
-          <button className="work-btn" data-value="All" onClick={handleWorks}>
+          <button
+            className="work-btn"
+            data-value="All"
+            onClick={handleWorks}
+            style={{ background: `${activeBtn === "All" ? " green " : ""}` }}
+          >
             All
           </button>
-          <button className="work-btn" data-value="REACT" onClick={handleWorks}>
+          <button
+            className="work-btn"
+            data-value="REACT"
+            onClick={handleWorks}
+            style={{ background: `${activeBtn === "REACT" ? " green " : ""}` }}
+          >
             REACT
           </button>
           <button
             className="work-btn"
             data-value="HTML/CSS"
             onClick={handleWorks}
+            style={{
+              background: `${activeBtn === "HTML/CSS" ? " green " : ""}`,
+            }}
           >
             HTML/CSS
           </button>
@@ -78,8 +94,11 @@ const WorksSection = () => {
             className="work-btn"
             data-value="JAVASCRIPT"
             onClick={handleWorks}
+            style={{
+              background: `${activeBtn === "JAVASCRIPT" ? " green " : ""}`,
+            }}
           >
-            JAVACRIPT
+            JAVASCRIPT
           </button>
         </div>
 
