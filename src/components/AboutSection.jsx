@@ -19,19 +19,23 @@ const AboutSection = () => {
           <div className="text">
             <h1>Atah Habibi</h1>
             <p>
-              I'm Atah Ur Rahman Habibi born in Afghanistan and grow up in India
-              , I have completed three years of my associate degree in computer
-              science at Grossmont and Cuyamaca college and got my associate
-              degree and I'm a front-end web developer having great skill at
-              front-end programs such HTML, CSS , JavaScript and React.js ,
-              passionate about solving problems with Websites and creating
-              different solutions. Resourceful Front End Web Developer bringing
-              in-depth knowledge of latest technology trends to produce clean
-              website design. Experience handling complex HTML and CSS coding,
-              design and extensions to meet organization's front-facing internet
-              needs. Detail-oriented collaboration with others to define project
-              expectations and demand. Hands-on testing and debugging.to address
-              inconsistencies and maintain performance thresholds. 
+              I am Atah Ur Rahman Habibi, a highly skilled and dedicated
+              front-end developer. I have completed three years of my associate
+              degree in computer science at Grossmont and Cuyamaca College,
+              where I gained expertise in HTML, CSS, JavaScript, and React.js. I
+              am also deeply interested in learning and implementing
+              cutting-edge programming and development technologies to stay at
+              the forefront of the industry. As a resourceful front-end web
+              developer, I stay up to date with the latest technology trends to
+              ensure I deliver clean and modern website designs. I have
+              experience handling complex HTML and CSS coding, designing
+              interfaces, and implementing extensions to meet the front-facing
+              internet needs of organizations. Additionally, I am proficient in
+              testing and debugging to ensure consistent performance and address
+              any inconsistencies. In addition to my front-end development
+              skills, I am also a proficient mobile app developer. I have a
+              strong passion for creating innovative and user-friendly
+              applications.
             </p>
 
             <a href={resume} className="btn btn-2 about-btn" download>
