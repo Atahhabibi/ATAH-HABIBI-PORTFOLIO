@@ -32,9 +32,8 @@ const HeroSection = () => {
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={[
-                  "Atah ur Rahman",
-                  "Front-End Developer",
-                  "Web designer",
+                  "Atah Habibi",
+                  "Full stack Developer",
                 ]}
                 loop={Infinity}
                 cursor

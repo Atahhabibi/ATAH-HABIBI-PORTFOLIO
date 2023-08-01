@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { MainTitle } from ".";
 import { languages } from "../utils/prommingIcons";
-import reactIcon from "../images/programmingIcons/sass-icon.png";
 import "./Skills.css";
 
 const Skills = () => {
@@ -19,8 +18,13 @@ const Skills = () => {
                   <div className="bar right delay"></div>
                   <div className="bar bottom delay"></div>
                   <div className="bar left"></div>
-                  <img src={item.icon} alt="" style={{ width: "5rem" }} className="skill-img" />
-                  <h3>{item.name}</h3>
+                  <img
+                    src={item.icon}
+                    alt=""
+                    style={{ width: "5rem" }}
+                    className="skill-img"
+                  />
+                  <h3 className="item-name">{item.name}</h3>
                 </div>
               </div>
             );
@@ -35,7 +39,6 @@ const Wrapper = styled.div`
   padding: 3rem 0;
   background: #0000004c;
   position: relative;
- 
 
   .skills-container {
     display: grid;
@@ -60,8 +63,6 @@ const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 600px) {
-
-
     .skill-img {
       width: 5rem !important;
     }
@@ -70,9 +71,9 @@ const Wrapper = styled.div`
       grid-template-columns: 1fr 1fr 1fr;
       margin-top: 0;
 
-      h3{
+      h3 {
         display: block;
-        font-size:1.5rem;
+        font-size: 1.5rem;
       }
     }
   }

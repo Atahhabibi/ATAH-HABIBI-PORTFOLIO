@@ -31,6 +31,12 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.item-name {
+  font-size: 1.4rem !important;
+  border: 3px solid white;
+  padding:0.1rem;
+}
 .bar.delay {
   animation-delay: var(--delay);
   -webkit-animation-delay: var(--delay);

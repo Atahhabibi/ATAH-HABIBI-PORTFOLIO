@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MainTitle } from ".";
 import about_img from "../images/atah-2.jpg";
 import "./Style.css";
-import resume from "../utils/AtahResume.pdf";
+import resume from "../utils/atah-habibi-full-stack.pdf";
 
 
 const AboutSection = () => {
@@ -19,23 +19,18 @@ const AboutSection = () => {
           <div className="text">
             <h1>Atah Habibi</h1>
             <p>
-              I am Atah Ur Rahman Habibi, a highly skilled and dedicated
-              front-end developer. I have completed three years of my associate
-              degree in computer science at Grossmont and Cuyamaca College,
-              where I gained expertise in HTML, CSS, JavaScript, and React.js. I
-              am also deeply interested in learning and implementing
-              cutting-edge programming and development technologies to stay at
-              the forefront of the industry. As a resourceful front-end web
-              developer, I stay up to date with the latest technology trends to
-              ensure I deliver clean and modern website designs. I have
-              experience handling complex HTML and CSS coding, designing
-              interfaces, and implementing extensions to meet the front-facing
-              internet needs of organizations. Additionally, I am proficient in
-              testing and debugging to ensure consistent performance and address
-              any inconsistencies. In addition to my front-end development
-              skills, I am also a proficient mobile app developer. I have a
-              strong passion for creating innovative and user-friendly
-              applications.
+              Highly skilled and innovative Full Stack Developer, creating and
+              implementing cutting-edge web applications. Proficient in both
+              front-end and back-end technologies, adept at collaborating with
+              cross-functional teams to deliver robust and user-friendly
+              solutions. Possess a strong understanding of software development
+              principles, database management, and cloud computing. Demonstrated
+              expertise in designing responsive and visually appealing user
+              interfaces while ensuring seamless integration with back-end
+              functionality. A proactive problem-solver with a passion for
+              staying up-to-date with emerging technologies and trends in the
+              industry. Committed to delivering scalable and efficient solutions
+              that exceed client expectations.
             </p>
 
             <a href={resume} className="btn btn-2 about-btn" download>

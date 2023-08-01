@@ -8,6 +8,12 @@ import reduxIcon from "../images/programmingIcons/redux-icon.png";
 import sassIcon from "../images/programmingIcons/sass-icon.png";
 import vsCodeIcon from "../images/programmingIcons/vsCode.png";
 import javascriptIcon from "../images/programmingIcons/javascript-icon .png";
+import nodejsIcon from "../images/programmingIcons/nodejs.png";
+import expressIcon from "../images/programmingIcons/express.png";
+import mongodb from "../images/programmingIcons/mongodb.png";
+import bootstrap from "../images/programmingIcons/bootstrap.png";
+import commoandLine from "../images/programmingIcons/command-line.png";
+import tailwindCss from "../images/programmingIcons/tailwind-css.png";
 
 export const languages = [
   {
@@ -54,5 +60,35 @@ export const languages = [
     id: 10,
     icon: vsCodeIcon,
     name: "VS code",
+  },
+  {
+    id: 11,
+    icon: nodejsIcon,
+    name: "Node js",
+  },
+  {
+    id: 12,
+    icon: expressIcon,
+    name: "express Js",
+  },
+  {
+    id: 13,
+    icon:mongodb,
+    name: "MongoDB",
+  },
+  {
+    id: 14,
+    icon:bootstrap,
+    name: "Bootstrap",
+  },
+  {
+    id: 15,
+    icon:tailwindCss,
+    name: "Tailwind",
+  },
+  {
+    id: 16,
+    icon:commoandLine,
+    name: "CommandLi",
   },
 ];
