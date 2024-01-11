@@ -1,9 +1,7 @@
 import { useEffect ,useState} from "react";
-
 import styled from "styled-components";
 import atah_1 from "../images/atah1.jpg";
 import { Typewriter } from "react-simple-typewriter";
-import scrollDownIcon from "../images/mouse-icon.png";
 
 const HeroSection = () => {
 
@@ -60,7 +58,7 @@ const HeroSection = () => {
             </a>
             <a
               className="btn btn-1"
-              href="https://www.instagram.com/official_atah/"
+              href="https://www.instagram.com/atah__habibi?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
               target="_blank"
             >
               <i className="fa fa-instagram"></i>
@@ -74,7 +72,7 @@ const HeroSection = () => {
             </a>
             <a
               className="btn btn-1"
-              href="https://www.linkedin.com/in/atah-ur-rahman-2bb841242/"
+              href="https://www.linkedin.com/in/atah-habibi-2bb841242/"
               target="_blank"
             >
               <i className="fa fa-linkedin"></i>
@@ -88,12 +86,6 @@ const HeroSection = () => {
             </a>
           </ul>
 
-          <button className="scroll-btn">
-            <a href="#ABOUT">
-              <img src={scrollDownIcon} alt="" />
-              <br />
-            </a>
-          </button>
         </div>
       </div>
     </Wrapper>

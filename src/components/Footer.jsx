@@ -63,7 +63,7 @@ const Footer = () => {
               <i className="fa fa-twitter"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/atah-ur-rahman-2bb841242/"
+              href="https://www.linkedin.com/in/atah-habibi-2bb841242/"
               target="_blank"
             >
               <i className="fa fa-linkedin"></i>
