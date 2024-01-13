@@ -37,7 +37,9 @@ const Navbar = () => {
       <div className="main-nav section-center">
         <div className="nav-heading">
           <a href="#home" className="name">
-            <img src={atahLogo} alt="" className="img logo-img" />
+           <h2 className="img logo-img">Atah Habibi</h2>
+           {/* <img src={atahLogo} alt="" className="img logo-img" /> */}
+
           </a>
 
           <button className="toggle-btn btn btn-1" onClick={openSidebar}>

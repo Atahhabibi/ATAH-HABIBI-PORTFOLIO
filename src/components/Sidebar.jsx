@@ -18,7 +18,9 @@ const Sidebar = () => {
       }
     >
       <div className="sidebar-header">
-        <img src={atahLogo} alt="" className="img sidebar-logo" />
+      <h2 className="img logo-img">Atah Habibi</h2>
+
+        {/* <img src={atahLogo} alt="" className="img sidebar-logo" /> */}
         <button className="close-btn" onClick={closeSidebar}>
           <AiFillCloseCircle />
         </button>

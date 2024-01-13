@@ -44,7 +44,7 @@ const HeroSection = () => {
           </h4>
 
           <p className="text">
-            I am a frontend web developer. I can provide clean code and pixel
+            I am a Full Stack Developer. I can provide clean code and pixel
             perfect design. I also make website more and more interactive with
             web animations.
           </p>
