@@ -14,6 +14,8 @@ import WatchMovieImg from "../images/projects/watchMovie.png";
 import foodBlogImg from "../images/projects/food.png";
 import discussionImg from "../images/projects/dis.png";
 import newsBlog from "../images/projects/newsBlog2.png";
+import yariga from '../images/projects/yariga.png';
+
 
 export const projectsData = [
   {
@@ -43,22 +45,31 @@ export const projectsData = [
         img: googleImg,
         program: "React"
       },
+
       {
         id: 4,
-        name: "Jobster",
-        liveLink: "https://jobster-job.netlify.app/landing",
-        githhubLink: "https://github.com/Atahhabibi/JOBSTER",
-        img: jobsterImg,
-        program: "React"
-      },
-      {
-        id: 5,
-        name: "Furniture online",
-        liveLink: "https://furniture-online-app.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
-        img: furnitureImg,
+        name: "Yariga-Real Estate App",
+        liveLink: "https://refine3.netlify.app/",
+        githhubLink: "https://github.com/Atahhabibi/YARIGA",
+        img: yariga,
         program: "React"
       }
+      // {
+      //   id: 4,
+      //   name: "Jobster",
+      //   liveLink: "https://jobster-job.netlify.app/landing",
+      //   githhubLink: "https://github.com/Atahhabibi/JOBSTER",
+      //   img: jobsterImg,
+      //   program: "React"
+      // },
+      // {
+      //   id: 5,
+      //   name: "Furniture online",
+      //   liveLink: "https://furniture-online-app.netlify.app/",
+      //   githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
+      //   img: furnitureImg,
+      //   program: "React"
+      // }
     ]
   },
 
@@ -129,15 +140,15 @@ export const projectsData = [
         img: SearchImg,
         program: "JAVASCRIPT"
       },
-      {
-        id: 3,
-        name: "comfy furniture store",
-        liveLink: "https://comfy-online-store.netlify.app/index.html",
-        githhubLink:
-          "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/29-comfy-store",
-        img: StoreImg,
-        program: "JAVASCRIPT"
-      }
+      // {
+      //   id: 3,
+      //   name: "comfy furniture store",
+      //   liveLink: "https://comfy-online-store.netlify.app/index.html",
+      //   githhubLink:
+      //     "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/29-comfy-store",
+      //   img: StoreImg,
+      //   program: "JAVASCRIPT"
+      // }
     ]
   }
 ];
@@ -171,14 +182,14 @@ export const BLOGS = [
     img: NokuSocialImg,
     program: "HTML/CSS"
   },
-  {
-    id: 1,
-    name: "News Blog",
-    date: "05 March 2023",
-    liveLink: "https://world-news-blog.netlify.app/",
-    githhubLink: "https://github.com/Atahhabibi/NEWS-BLOG",
-    img:newsBlog,
-    program: "React"
-  },
+  // {
+  //   id: 1,
+  //   name: "News Blog",
+  //   date: "05 March 2023",
+  //   liveLink: "https://world-news-blog.netlify.app/",
+  //   githhubLink: "https://github.com/Atahhabibi/NEWS-BLOG",
+  //   img:newsBlog,
+  //   program: "React"
+  // },
 
 ];

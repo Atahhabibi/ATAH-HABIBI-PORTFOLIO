@@ -19,7 +19,7 @@ const AboutSection = () => {
           <div className="text">
             <h1>Atah Habibi</h1>
             <p>
-              Highly skilled and innovative Full Stack Developer, creating and
+              Highly skilled and innovative full stack engineer, creating and
               implementing cutting-edge web applications. Proficient in both
               front-end and back-end technologies, adept at collaborating with
               cross-functional teams to deliver robust and user-friendly

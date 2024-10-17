@@ -20,7 +20,7 @@ const HeroSection = () => {
               margin: "auto 0",
               fontWeight: "bold",
               color: "white",
-              fontSize: "2rem",
+              fontSize: "2rem"
             }}
             className="title"
           >
@@ -29,10 +29,7 @@ const HeroSection = () => {
             <span style={{ color: "#72e2ae", fontWeight: "bold" }}>
               {/* Style will be inherited from the parent element */}
               <Typewriter
-                words={[
-                  "Atah Habibi",
-                  "Full stack Developer",
-                ]}
+                words={["Atah Habibi", "Full stack Engineer"]}
                 loop={Infinity}
                 cursor
                 cursorStyle="_"
@@ -44,9 +41,7 @@ const HeroSection = () => {
           </h4>
 
           <p className="text">
-            I am a Full Stack Developer. I can provide clean code and pixel
-            perfect design. I also make website more and more interactive with
-            web animations.
+                  Full Stack Engineer experience in front-end/back-end development
           </p>
           <ul className="social">
             <a
@@ -85,7 +80,6 @@ const HeroSection = () => {
               <i className="fa fa-twitter"></i>
             </a>
           </ul>
-
         </div>
       </div>
     </Wrapper>

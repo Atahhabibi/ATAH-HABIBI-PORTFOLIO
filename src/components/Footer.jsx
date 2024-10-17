@@ -31,7 +31,7 @@ const Footer = () => {
           <div>
             <i className="fa fa-map-marker"></i>
             <p>
-              <span></span> Sand diego, California
+              <span></span> San diego, California
             </p>
           </div>
 
