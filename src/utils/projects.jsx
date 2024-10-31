@@ -52,8 +52,8 @@ export const projectsData = [
         liveLink: "https://refine3.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/YARIGA",
         img: yariga,
-        program: "React"
-      }
+        program: "REACT-FULL STACK APP"
+      },
       // {
       //   id: 4,
       //   name: "Jobster",
@@ -62,14 +62,14 @@ export const projectsData = [
       //   img: jobsterImg,
       //   program: "React"
       // },
-      // {
-      //   id: 5,
-      //   name: "Furniture online",
-      //   liveLink: "https://furniture-online-app.netlify.app/",
-      //   githhubLink: "https://github.com/Atahhabibi/FURNITURE-ONLINE",
-      //   img: furnitureImg,
-      //   program: "React"
-      // }
+      {
+        id: 5,
+        name: "Comfy-Furniture-store",
+        liveLink: "https://online-furniture-comfy.netlify.app/",
+        githhubLink: "https://github.com/Atahhabibi/FURNITURE-STORE",
+        img: StoreImg,
+        program: "REACT-FULL STACK APP "
+      }
     ]
   },
 
@@ -139,7 +139,7 @@ export const projectsData = [
           "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/28-Wikipedia",
         img: SearchImg,
         program: "JAVASCRIPT"
-      },
+      }
       // {
       //   id: 3,
       //   name: "comfy furniture store",
