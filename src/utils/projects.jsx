@@ -1,6 +1,6 @@
 import backroadTourImg from "../images/projects/BackroadTour.png";
 import NokuSocialImg from "../images/projects/NukuSocial.png";
-import CaraStoreImg from "../images/projects/karaStore.png";
+// import CaraStoreImg from "../images/projects/karaStore.png";
 import EgadorEducationImg from "../images/projects/EgatorEducation.png";
 import CocktailImg from "../images/projects/Cocktail.png";
 import SearchImg from "../images/projects/Search.png";
@@ -100,14 +100,14 @@ export const projectsData = [
         img: NokuSocialImg,
         program: "HTML/CSS"
       },
-      {
-        id: 4,
-        name: "cara shopping online",
-        liveLink: "https://shopping-with-us.netlify.app/index.html",
-        githhubLink: "https://github.com/Atahhabibi/KARA-E-COMMERCE-WEBSITE",
-        img: CaraStoreImg,
-        program: "HTML/CSS"
-      },
+      // {
+      //   id: 4,
+      //   name: "cara shopping online",
+      //   liveLink: "https://shopping-with-us.netlify.app/index.html",
+      //   githhubLink: "https://github.com/Atahhabibi/KARA-E-COMMERCE-WEBSITE",
+      //   img: CaraStoreImg,
+      //   program: "HTML/CSS"
+      // },
       {
         id: 5,
         name: "Egator education",
