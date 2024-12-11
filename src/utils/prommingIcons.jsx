@@ -51,11 +51,7 @@ export const languages = [
     icon: reactjsIcon,
     name: "React",
   },
-  {
-    id: 9,
-    icon: sassIcon,
-    name: "SASS",
-  },
+
   {
     id: 10,
     icon: vsCodeIcon,
@@ -76,11 +72,7 @@ export const languages = [
     icon:mongodb,
     name: "MongoDB",
   },
-  {
-    id: 14,
-    icon:bootstrap,
-    name: "Bootstrap",
-  },
+
   {
     id: 15,
     icon:tailwindCss,
