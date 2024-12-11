@@ -5,8 +5,10 @@ import Work from "./Work";
 import { useRef, useState } from "react";
 
 const WorksSection = () => {
-  let projects = projectsData.map((item) => item.projects);
-  projects = projects.flat();
+  // Flatten the projects array
+  const projects = projectsData.flatMap((item) => item.projects);
+
+  // State management
   const [projectsIndex, setProjectsIndex] = useState(6);
   const [newProjects, setNewProjects] = useState(
     projects.slice(0, projectsIndex)
@@ -15,45 +17,34 @@ const WorksSection = () => {
   const [activeBtn, setActiveBtn] = useState("All");
   const loadRef = useRef(null);
 
+  // Handle filtering projects
   const handleWorks = (e) => {
     const value = e.target.dataset.value;
-
     setActiveBtn(value);
 
     if (value === "All") {
-      loadRef.current.style.display = "block";
       setNewProjects(projects.slice(0, 6));
       setIsLoad(true);
     } else {
-      let temp = projects.filter(
+      const filteredProjects = projects.filter(
         (item) => item.program.toUpperCase() === value
       );
-      loadRef.current.style.display = "none";
-      setNewProjects(temp);
+      setNewProjects(filteredProjects);
+      setIsLoad(false);
     }
   };
 
+  // Handle loading more or showing less
   const handleLoad = () => {
-    setProjectsIndex((prev) => {
-      let newIndex = prev + 3;
-      if (newIndex >= projects.length) {
-        setIsLoad(false);
-        newIndex = projects.length;
-        const worksSecion = document.getElementById("WORKS");
-
-        if (worksSecion) {
-          if (!isLoad) {
-            worksSecion.scrollIntoView({ behavior: "smooth" });
-          }
-        }
-      }
+    if (isLoad) {
+      const newIndex = Math.min(projectsIndex + 3, projects.length);
+      setProjectsIndex(newIndex);
       setNewProjects(projects.slice(0, newIndex));
-      return newIndex;
-    });
 
-    if (!isLoad) {
-      setNewProjects(projects.slice(0, 6));
+      if (newIndex === projects.length) setIsLoad(false);
+    } else {
       setProjectsIndex(6);
+      setNewProjects(projects.slice(0, 6));
       setIsLoad(true);
     }
   };
@@ -63,68 +54,19 @@ const WorksSection = () => {
       <div className="section-center">
         <MainTitle mainTitle="My works" sectionTitle="Works" />
 
-        <div className="work-btn-container">
-          <button
-            className="work-btn"
-            data-value="All"
-            onClick={handleWorks}
-            style={{ background: `${activeBtn === "All" ? " green " : ""}` }}
-          >
-            All
-          </button>
-          <button
-            className="work-btn"
-            data-value="REACT"
-            onClick={handleWorks}
-            style={{ background: `${activeBtn === "REACT" ? " green " : ""}` }}
-          >
-            REACT
-          </button>
-          <button
-            className="work-btn"
-            data-value="HTML/CSS"
-            onClick={handleWorks}
-            style={{
-              background: `${activeBtn === "HTML/CSS" ? " green " : ""}`,
-            }}
-          >
-            HTML/CSS
-          </button>
-          <button
-            className="work-btn"
-            data-value="JAVASCRIPT"
-            onClick={handleWorks}
-            style={{
-              background: `${activeBtn === "JAVASCRIPT" ? " green " : ""}`,
-            }}
-          >
-            JAVASCRIPT
-          </button>
+        <div className="works-container">
+          {newProjects.map((item, index) => (
+            <Work key={index} {...item} />
+          ))}
         </div>
 
-        <div
-          className="works-container"
-          style={{ transform: "none", transformOrigin: "50% 50% 0px" }}
-        >
-          {newProjects.map((item, index) => {
-            return <Work key={index} {...item} />;
-          })}
-        </div>
-        {isLoad ? (
+        {projects.length > 6 && (
           <button
             className="btn btn-2 load-btn"
             onClick={handleLoad}
             ref={loadRef}
           >
-            load more
-          </button>
-        ) : (
-          <button
-            className="btn btn-2 load-btn"
-            onClick={handleLoad}
-            ref={loadRef}
-          >
-            show less
+            {isLoad ? "Load More" : "Show Less"}
           </button>
         )}
       </div>
@@ -137,18 +79,6 @@ const Wrapper = styled.div`
   background: #06022c33;
   position: relative;
 
-  .work-btn-container {
-    text-align: center;
-    transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
-    .work-btn {
-      font-weight: 600;
-      border: 3px solid #000000bd;
-      background: #8c3c3c;
-      color: white;
-      font-size: 0.8rem;
-    }
-  }
-
   .works-container {
     display: grid;
     justify-items: center;
@@ -159,29 +89,22 @@ const Wrapper = styled.div`
   .load-btn {
     margin: 0 auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;
     font-weight: normal;
     font-size: 0.8rem;
-    /* background:var(--primary-100); */
   }
 
   @media screen and (min-width: 700px) {
     min-height: 100vh;
 
-    .work-btn-container {
-      .work-btn {
-        font-size: 1rem;
-      }
+    .works-container {
+      grid-template-columns: 1fr 1fr;
     }
 
     .load-btn {
       font-size: 1rem;
     }
-
-    .works-container {
-      grid-template-columns: 1fr 1fr;
-    }
   }
+
   @media screen and (min-width: 1100px) {
     .works-container {
       grid-template-columns: 1fr 1fr 1fr;

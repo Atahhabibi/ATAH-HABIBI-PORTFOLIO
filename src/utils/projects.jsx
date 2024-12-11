@@ -14,8 +14,8 @@ import WatchMovieImg from "../images/projects/watchMovie.png";
 import foodBlogImg from "../images/projects/food.png";
 import discussionImg from "../images/projects/dis.png";
 import newsBlog from "../images/projects/newsBlog2.png";
-import yariga from '../images/projects/yariga.png';
-
+import yariga from "../images/projects/yariga.png";
+import mosque from "../images/projects/mosque.png";
 
 export const projectsData = [
   {
@@ -23,133 +23,56 @@ export const projectsData = [
     projects: [
       {
         id: 1,
-        name: "WatchMovie",
+        name: "KhidmatHub",
         liveLink: "https://watch-favorite-movie.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
-        img: WatchMovieImg,
-        program: "React"
+        img: mosque,
+        program: "Full stack app"
       },
       {
         id: 2,
-        name: "Yutube Clone",
+        name: "StreamNest",
+        liveLink: "https://watch-favorite-movie.netlify.app/",
+        githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
+        img: WatchMovieImg,
+        program: "React/Tailwind"
+      },
+      {
+        id: 3,
+        name: "FlowTube",
         liveLink: "https://yutube-app-clone.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
         img: yutubeImg,
         program: "React"
       },
-      {
-        id: 3,
-        name: "Google Search Clone",
-        liveLink: "https://search-google-app.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/GOOGLE_SEARCH_CLONE",
-        img: googleImg,
-        program: "React"
-      },
 
       {
         id: 4,
-        name: "Yariga-Real Estate App",
+        name: "HomeKey",
         liveLink: "https://refine3.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/YARIGA",
         img: yariga,
-        program: "REACT-FULL STACK APP"
+        program: "Full stack app"
       },
-      // {
-      //   id: 4,
-      //   name: "Jobster",
-      //   liveLink: "https://jobster-job.netlify.app/landing",
-      //   githhubLink: "https://github.com/Atahhabibi/JOBSTER",
-      //   img: jobsterImg,
-      //   program: "React"
-      // },
       {
         id: 5,
-        name: "Comfy-Furniture-store",
+        name: "FurniHaven",
         liveLink: "https://online-furniture-comfy.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/FURNITURE-STORE",
         img: StoreImg,
-        program: "REACT-FULL STACK APP "
+        program: "Full stack app "
       }
     ]
   },
 
   {
     name: "HTML/CSS",
-    projects: [
-      {
-        id: 3,
-        name: "Portfolio Website",
-        liveLink: "https://front-end-portfolio-website.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/PORTFOLIO-FRONT-END",
-        img: portfolioImg,
-        program: "HTML/CSS"
-      },
-      {
-        id: 1,
-        name: "BackRoad Tour Company",
-        liveLink: "https://company-backroad-tours.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/TOUR-COMPANY-PROJECT",
-        img: backroadTourImg,
-        program: "HTML/CSS"
-      },
-      {
-        id: 2,
-        name: "Noku Social App",
-        liveLink: "https://nokusocial.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/SOCIAL-MEDIA-NOKO-SOCIAL",
-        img: NokuSocialImg,
-        program: "HTML/CSS"
-      },
-      // {
-      //   id: 4,
-      //   name: "cara shopping online",
-      //   liveLink: "https://shopping-with-us.netlify.app/index.html",
-      //   githhubLink: "https://github.com/Atahhabibi/KARA-E-COMMERCE-WEBSITE",
-      //   img: CaraStoreImg,
-      //   program: "HTML/CSS"
-      // },
-      {
-        id: 5,
-        name: "Egator education",
-        liveLink: "https://egator-education.netlify.app/index.html",
-        githhubLink: "https://github.com/Atahhabibi/EGATOR-EDUCATION-WEBSITE",
-        img: EgadorEducationImg,
-        program: "HTML/CSS"
-      }
-    ]
+    projects: []
   },
 
   {
     name: "JAVASCRIPT",
-    projects: [
-      {
-        id: 1,
-        name: "Cocktial Drink Shop",
-        liveLink: "https://drink-site-project.netlify.app/index.html",
-        githhubLink:
-          "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/24-Coktails",
-        img: CocktailImg,
-        program: "JAVASCRIPT"
-      },
-      {
-        id: 2,
-        name: "Search Wikipedia Clone",
-        liveLink: "https://wikipedia-search-site.netlify.app/",
-        githhubLink:
-          "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/28-Wikipedia",
-        img: SearchImg,
-        program: "JAVASCRIPT"
-      }
-      // {
-      //   id: 3,
-      //   name: "comfy furniture store",
-      //   liveLink: "https://comfy-online-store.netlify.app/index.html",
-      //   githhubLink:
-      //     "https://github.com/Atahhabibi/ATAH-PRACTICE/tree/main/29-comfy-store",
-      //   img: StoreImg,
-      //   program: "JAVASCRIPT"
-      // }
-    ]
+    projects: []
   }
 ];
 
@@ -160,7 +83,7 @@ export const BLOGS = [
     name: "Food Recipe Blog",
     liveLink: "https://food-blog-recipe.netlify.app/",
     githhubLink: "https://github.com/Atahhabibi/FOOD-RECIPE-BLOG",
-    img:foodBlogImg,
+    img: foodBlogImg,
     program: "React"
   },
   {
@@ -168,9 +91,8 @@ export const BLOGS = [
     date: "14 May 2023",
     name: "Discussion Blog",
     liveLink: "https://discussion-blog.netlify.app/",
-    githhubLink:
-      "https://github.com/Atahhabibi/DISCUSSION-BLOG",
-    img:discussionImg,
+    githhubLink: "https://github.com/Atahhabibi/DISCUSSION-BLOG",
+    img: discussionImg,
     program: "REACT"
   },
   {
@@ -181,7 +103,7 @@ export const BLOGS = [
     githhubLink: "https://github.com/Atahhabibi/SOCIAL-MEDIA-NOKO-SOCIAL",
     img: NokuSocialImg,
     program: "HTML/CSS"
-  },
+  }
   // {
   //   id: 1,
   //   name: "News Blog",
@@ -191,5 +113,4 @@ export const BLOGS = [
   //   img:newsBlog,
   //   program: "React"
   // },
-
 ];

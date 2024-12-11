@@ -19,18 +19,20 @@ const AboutSection = () => {
           <div className="text">
             <h1>Atah Habibi</h1>
             <p>
-              Highly skilled and innovative full stack engineer, creating and
-              implementing cutting-edge web applications. Proficient in both
-              front-end and back-end technologies, adept at collaborating with
-              cross-functional teams to deliver robust and user-friendly
-              solutions. Possess a strong understanding of software development
-              principles, database management, and cloud computing. Demonstrated
-              expertise in designing responsive and visually appealing user
-              interfaces while ensuring seamless integration with back-end
-              functionality. A proactive problem-solver with a passion for
-              staying up-to-date with emerging technologies and trends in the
-              industry. Committed to delivering scalable and efficient solutions
-              that exceed client expectations.
+              Aspiring Software Engineer with a solution-focused mindset and
+              skills in creating robust, scalable, and intuitive applications
+              that deliver seamless user experiences. Skilled in front-end and
+              back-end development, with expertise in React, Node.js,
+              Express.js, MongoDB, and RESTful APIs to build high-performing,
+              user-centric solutions. Experienced in user authentication (JWT),
+              state management (Redux Toolkit), and responsive design using CSS,
+              SCSS, Tailwind CSS, and Styled Components. Capable of implementing
+              role-based access control to ensure security and scalability
+              across different user levels. Passionate about collaborating
+              across teams, optimizing performance, and applying best practices
+              in UI/UX design. Adaptable and driven by a strong work ethic,
+              committed to solving complex challenges and producing high-quality
+              code.
             </p>
 
             <a href={resume} className="btn btn-2 about-btn" download>
