@@ -21,7 +21,7 @@ const Footer = () => {
 
             <a href="#WORKS">WORKS</a>
 
-            <a href="#BLOGS">BOLGS</a>
+            {/* <a href="#BLOGS">BOLGS</a> */}
 
             <a href="#CONTACT">CONTACT</a>
           </p>
