@@ -15,7 +15,9 @@ import foodBlogImg from "../images/projects/food.png";
 import discussionImg from "../images/projects/dis.png";
 import newsBlog from "../images/projects/newsBlog2.png";
 import yariga from "../images/projects/yariga.png";
+import streamNest from "../images/projects/StreamNest.png";
 import mosque from "../images/projects/mosque.png";
+
 
 export const projectsData = [
   {
@@ -42,7 +44,7 @@ export const projectsData = [
         name: "StreamNest",
         liveLink: "https://app.netlify.com/sites/streamnestmovie/overview",
         githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
-        img: WatchMovieImg,
+        img:streamNest,
         program: "React"
       },
       {
@@ -54,14 +56,7 @@ export const projectsData = [
         program: "React"
       }
 
-      // {
-      //   id: 4,
-      //   name: "HomeKey",
-      //   liveLink: "https://refine3.netlify.app/",
-      //   githhubLink: "https://github.com/Atahhabibi/YARIGA",
-      //   img: yariga,
-      //   program: "Full stack app"
-      // },
+  
     ]
   },
 
