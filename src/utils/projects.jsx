@@ -24,7 +24,7 @@ export const projectsData = [
       {
         id: 1,
         name: "KhidmatHub",
-        liveLink: "https://watch-favorite-movie.netlify.app/",
+        liveLink: "https://volunteers2mosque.netlify.app",
         githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
         img: mosque,
         program: "Full stack app"
