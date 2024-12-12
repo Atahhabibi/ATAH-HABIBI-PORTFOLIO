@@ -30,6 +30,14 @@ export const projectsData = [
         program: "Full stack app"
       },
       {
+        id: 5,
+        name: "FurniHaven",
+        liveLink: "https://online-furniture-comfy.netlify.app/",
+        githhubLink: "https://github.com/Atahhabibi/FURNITURE-STORE",
+        img: StoreImg,
+        program: "Full stack app "
+      },
+      {
         id: 2,
         name: "StreamNest",
         liveLink: "https://watch-favorite-movie.netlify.app/",
@@ -37,14 +45,14 @@ export const projectsData = [
         img: WatchMovieImg,
         program: "React/Tailwind"
       },
-      // {
-      //   id: 3,
-      //   name: "FlowTube",
-      //   liveLink: "https://yutube-app-clone.netlify.app/",
-      //   githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
-      //   img: yutubeImg,
-      //   program: "React"
-      // },
+      {
+        id: 3,
+        name: "FlowTube",
+        liveLink: "https://yutube-app-clone.netlify.app/",
+        githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
+        img: yutubeImg,
+        program: "React"
+      }
 
       // {
       //   id: 4,
@@ -54,15 +62,6 @@ export const projectsData = [
       //   img: yariga,
       //   program: "Full stack app"
       // },
-      
-      {
-        id: 5,
-        name: "FurniHaven",
-        liveLink: "https://online-furniture-comfy.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/FURNITURE-STORE",
-        img: StoreImg,
-        program: "Full stack app "
-      }
     ]
   },
 
