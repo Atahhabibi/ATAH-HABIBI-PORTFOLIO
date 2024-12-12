@@ -24,7 +24,7 @@ function App() {
       <Skills />
       <Sidebar />
       <WorksSection />
-      <BlogsSection />
+      {/* <BlogsSection /> */}
       <ContactSection />
       <Footer />
     </div>

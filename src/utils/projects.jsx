@@ -40,15 +40,15 @@ export const projectsData = [
       {
         id: 2,
         name: "StreamNest",
-        liveLink: "https://watch-favorite-movie.netlify.app/",
+        liveLink: "https://app.netlify.com/sites/streamnestmovie/overview",
         githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
         img: WatchMovieImg,
-        program: "React/Tailwind"
+        program: "React"
       },
       {
         id: 3,
         name: "FlowTube",
-        liveLink: "https://yutube-app-clone.netlify.app/",
+        liveLink: "https://flowtube.netlify.app/",
         githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
         img: yutubeImg,
         program: "React"
