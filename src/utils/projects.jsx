@@ -37,23 +37,24 @@ export const projectsData = [
         img: WatchMovieImg,
         program: "React/Tailwind"
       },
-      {
-        id: 3,
-        name: "FlowTube",
-        liveLink: "https://yutube-app-clone.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
-        img: yutubeImg,
-        program: "React"
-      },
+      // {
+      //   id: 3,
+      //   name: "FlowTube",
+      //   liveLink: "https://yutube-app-clone.netlify.app/",
+      //   githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
+      //   img: yutubeImg,
+      //   program: "React"
+      // },
 
-      {
-        id: 4,
-        name: "HomeKey",
-        liveLink: "https://refine3.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/YARIGA",
-        img: yariga,
-        program: "Full stack app"
-      },
+      // {
+      //   id: 4,
+      //   name: "HomeKey",
+      //   liveLink: "https://refine3.netlify.app/",
+      //   githhubLink: "https://github.com/Atahhabibi/YARIGA",
+      //   img: yariga,
+      //   program: "Full stack app"
+      // },
+      
       {
         id: 5,
         name: "FurniHaven",
