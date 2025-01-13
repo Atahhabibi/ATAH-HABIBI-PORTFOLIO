@@ -1,8 +1,6 @@
 
 import NokuSocialImg from "../images/projects/NukuSocial.png";
 
-import StoreImg from "../images/projects/Store.png";
-
 import foodBlogImg from "../images/projects/food.png";
 import discussionImg from "../images/projects/dis.png";
 
