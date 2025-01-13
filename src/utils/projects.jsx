@@ -1,7 +1,7 @@
 import foodBlogImg from "../images/projects/food.png";
 
 import mosque from "../images/projects/mosque.png";
-import blogPillarImg from "../images/blogPillar.png";
+import blogPillarImg from "../images/blogpillar.png";
 
 export const projectsData = [
   {
