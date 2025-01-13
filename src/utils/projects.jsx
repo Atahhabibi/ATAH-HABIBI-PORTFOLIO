@@ -1,22 +1,13 @@
-import backroadTourImg from "../images/projects/BackroadTour.png";
+
 import NokuSocialImg from "../images/projects/NukuSocial.png";
-// import CaraStoreImg from "../images/projects/karaStore.png";
-import EgadorEducationImg from "../images/projects/EgatorEducation.png";
-import CocktailImg from "../images/projects/Cocktail.png";
-import SearchImg from "../images/projects/Search.png";
+
 import StoreImg from "../images/projects/Store.png";
-import yutubeImg from "../images/projects/yutube.png";
-import googleImg from "../images/projects/google2.png";
-import jobsterImg from "../images/projects/jobster.png";
-import portfolioImg from "../images/projects/protfolioWesite.png";
-import furnitureImg from "../images/projects/furniture.png";
-import WatchMovieImg from "../images/projects/watchMovie.png";
+
 import foodBlogImg from "../images/projects/food.png";
 import discussionImg from "../images/projects/dis.png";
-import newsBlog from "../images/projects/newsBlog2.png";
-import yariga from "../images/projects/yariga.png";
-import streamNest from "../images/projects/StreamNest.png";
+
 import mosque from "../images/projects/mosque.png";
+import blogPillarImg from "../images/projects/blogPillar.png";
 
 
 export const projectsData = [
@@ -25,38 +16,20 @@ export const projectsData = [
     projects: [
       {
         id: 1,
-        name: "KhidmatHub",
-        liveLink: "https://volunteers2mosque.netlify.app",
-        githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
+        name: "Voluntrix",
+        liveLink: "https://voluntrix.com/",
+        githhubLink: "https://github.com/Atahhabibi/voluntrix",
         img: mosque,
-        program: "Full stack app"
+        program: "www.voluntrix.com"
       },
       {
         id: 5,
-        name: "FurniHaven",
-        liveLink: "https://online-furniture-comfy.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/FURNITURE-STORE",
-        img: StoreImg,
-        program: "Full stack app "
-      },
-      {
-        id: 2,
-        name: "StreamNest",
-        liveLink: "https://app.netlify.com/sites/streamnestmovie/overview",
-        githhubLink: "https://github.com/Atahhabibi/WATCHMOVIE",
-        img:streamNest,
-        program: "React"
-      },
-      {
-        id: 3,
-        name: "FlowTube",
-        liveLink: "https://flowtube.netlify.app/",
-        githhubLink: "https://github.com/Atahhabibi/YUTUBE-CLONE",
-        img: yutubeImg,
-        program: "React"
+        name: "BlogPillar",
+        liveLink: "https://blogpillar.com",
+        githhubLink: "https://github.com/Atahhabibi/blogpillar",
+        img: blogPillarImg,
+        program: "www.blogpillar.com"
       }
-
-  
     ]
   },
 

@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   }
 
   .program{
-    text-transform:uppercase;
+    text-transform:lowercase;
   }
 
   .single-img-container {
